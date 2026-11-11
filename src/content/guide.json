@@ -1,0 +1,1152 @@
+{
+  "episodes": [
+    {
+      "id": "crisis",
+      "title": "A City in Crisis",
+      "summary": "Outside the palace at Thebes, a priest and citizens ask Oedipus to help a city suffering from plague, failed harvests, and death. They remember how he answered the Sphinx and saved them before. Oedipus has already sent Creon to consult Apollo at Delphi, showing that his concern has begun before the public appeal. The opening makes the ruler's private decisions a matter of collective survival. His confidence rests on a genuine record of service, yet the citizens' dependence on one exceptional man also creates an unstable expectation: the person who solved one crisis must somehow solve the next.",
+      "discovery": "Thebes needs an explanation and remedy; Creon has been sent to Delphi.",
+      "significance": "Public suffering gives the investigation urgency before it becomes a question of personal identity.",
+      "question": "What does Oedipus's response reveal about his understanding of leadership?",
+      "characterIds": ["oedipus", "creon", "chorus"],
+      "passageIds": ["shared-burden"]
+    },
+    {
+      "id": "investigation",
+      "title": "The Investigation Begins",
+      "summary": "Creon returns with Apollo's instruction: Thebes must remove the pollution associated with the unpunished murder of its former king, Laius. Oedipus promises to discover the killer. He asks for information, offers protection to a witness, and pronounces a curse against the person who committed the crime. To him, the dead king appears to be another man's problem, but the inquiry will reveal a much closer connection. The action begins as an attempt to restore civic health through judgment and public knowledge. His proclamation is also dramatically ironic: he establishes terms of punishment that will eventually apply to himself.",
+      "discovery": "The present crisis is linked to Laius's unresolved murder.",
+      "significance": "The search receives a public purpose and a defined question: who killed Laius?",
+      "question": "How does the curse change meaning once the killer is identified?",
+      "characterIds": ["oedipus", "creon", "laius", "chorus"],
+      "passageIds": ["blood-stain"]
+    },
+    {
+      "id": "accusation",
+      "title": "A Difficult Accusation",
+      "summary": "Oedipus summons Tiresias, the blind prophet, expecting useful testimony. Tiresias initially refuses to speak because he understands the suffering disclosure will cause. Oedipus treats that refusal as disloyalty, and their exchange becomes hostile. Under pressure, Tiresias identifies Oedipus as the man he seeks and hints at his hidden family relationships. Oedipus hears an accusation without an explanation he can accept. Rather than reconsider his assumptions, he suspects that the prophet and Creon are conspiring against him. The scene places knowledge in conflict with authority: the person who possesses the truth cannot make the ruler recognize it.",
+      "discovery": "Tiresias accuses Oedipus, but his claim has not yet been established through the later testimony.",
+      "significance": "The truth is spoken early; understanding it requires more than simply hearing the words.",
+      "question": "Why does Tiresias's knowledge fail to persuade Oedipus?",
+      "characterIds": ["oedipus", "tiresias", "creon"],
+      "passageIds": ["accusation-truth"]
+    },
+    {
+      "id": "authority",
+      "title": "Suspicion and Authority",
+      "summary": "Creon answers Oedipus's charge that he has engineered a plot for the throne. He argues that he already enjoys influence without bearing the full burdens of kingship, so the alleged ambition makes little practical sense. Oedipus, however, treats suspicion as though it were proof and threatens severe punishment. Jocasta and the Chorus intervene to restrain the conflict. This episode does not supply the final solution to Laius's murder, but it exposes a weakness in the investigative process. A ruler who can command witnesses must also listen to them fairly. Political fear begins to distort the search for reliable knowledge.",
+      "discovery": "Creon offers a reasoned defense against the conspiracy allegation.",
+      "significance": "The investigation can be damaged when the investigator uses power to protect a premature conclusion.",
+      "question": "What separates reasonable caution from an unsupported accusation?",
+      "characterIds": ["oedipus", "creon", "jocasta", "chorus"],
+      "passageIds": ["reason-before-judgment"]
+    },
+    {
+      "id": "memories",
+      "title": "Memories Become Evidence",
+      "summary": "Trying to reassure Oedipus, Jocasta explains a prophecy once given to Laius: their son was expected to kill him. She believes the prediction failed because the child was exposed and Laius reportedly died at a place where three roads meet. That detail alarms Oedipus. He recalls leaving Corinth after hearing an oracle about killing his father and marrying his mother, then killing men during a violent encounter at a crossroads. A report meant to disprove prophecy instead links separate memories. The surviving witness to Laius's death becomes essential. Oedipus now has reason to fear involvement, but his birth remains unresolved.",
+      "discovery": "The place of Laius's death resembles the setting of Oedipus's own remembered encounter.",
+      "significance": "Reassurance becomes evidence; the inquiry begins turning back toward its leader.",
+      "question": "Why is the crossroads detail more persuasive than Tiresias's unsupported accusation?",
+      "characterIds": [
+        "oedipus",
+        "jocasta",
+        "laius",
+        "polybus",
+        "merope",
+        "shepherd"
+      ],
+      "passageIds": ["three-roads"]
+    },
+    {
+      "id": "corinth",
+      "title": "News from Corinth",
+      "summary": "A messenger reports that Polybus, the king Oedipus considers his father, has died naturally. This initially appears to remove the threat of patricide. Oedipus still fears marrying Merope, whom he believes to be his mother. Hoping to relieve that fear, the messenger explains that Polybus and Merope were not his birth parents: he himself carried the infant Oedipus to Corinth after receiving him from another shepherd. Jocasta understands the implications before Oedipus does and begs him to stop. He interprets her distress as concern about low birth and insists on continuing. Good news has become the route to a devastating discovery.",
+      "discovery": "Oedipus was adopted; the messenger can connect his infancy to a shepherd from Laius's household.",
+      "significance": "The messenger's attempt to remove fear produces the opposite effect, a central example of reversal.",
+      "question": "What does Oedipus misunderstand about Jocasta's request to stop?",
+      "characterIds": [
+        "oedipus",
+        "jocasta",
+        "polybus",
+        "merope",
+        "messenger",
+        "shepherd"
+      ],
+      "passageIds": ["not-by-blood", "stop-the-quest"]
+    },
+    {
+      "id": "recognition",
+      "title": "Recognition",
+      "summary": "The shepherd from Laius's household is brought before Oedipus. He resists questioning, but the Corinthian messenger identifies him as the man who once handed over the infant. Pressed by Oedipus, the shepherd admits that the child came from Laius's house and was given to him by Jocasta to be destroyed because of the oracle. Pity led him to preserve the child instead. The separate pieces now converge: the abandoned baby, the adopted prince, the stranger at the crossroads, and the king of Thebes are the same person. Oedipus recognizes his parentage and the meaning of his marriage and violence.",
+      "discovery": "The shepherd's testimony establishes Oedipus as the child of Laius and Jocasta.",
+      "significance": "Knowledge of the murder and knowledge of the investigator's identity become inseparable.",
+      "question": "Why is recognition more than discovering a single missing fact?",
+      "characterIds": ["oedipus", "jocasta", "laius", "messenger", "shepherd"],
+      "passageIds": ["pity-for-the-child", "last-light"]
+    },
+    {
+      "id": "aftermath",
+      "title": "The Aftermath",
+      "summary": "A palace messenger reports Jocasta's death by suicide and Oedipus's self-blinding. When Oedipus appears, the consequences of the discovery become public. He asks for exile and worries about his children, while Creon takes responsibility for the immediate situation. Creon insists on consulting the gods again rather than simply granting Oedipus's demand. The play does not complete an onstage departure into exile. Its final movement is a loss of mastery: the ruler who directed questions and punishments must now ask others for help. The Chorus closes by reconsidering the insecurity of human prosperity and the limits of judging a life too soon.",
+      "discovery": "The truth has irreversibly changed Oedipus's family, authority, and view of himself.",
+      "significance": "The ending shifts attention from solving the mystery to living with its consequences.",
+      "question": "How does the ending change the meaning of Oedipus's earlier confidence?",
+      "characterIds": ["oedipus", "jocasta", "creon", "chorus"],
+      "passageIds": ["mortal-happiness", "last-light"]
+    }
+  ],
+  "events": [
+    {
+      "id": "oracle-to-laius",
+      "title": "A warning to Laius",
+      "summary": "A prophecy warns that Laius will die at the hands of his son. Jocasta later recounts the warning while arguing that prophecy has failed.",
+      "episodeIds": ["memories", "recognition"]
+    },
+    {
+      "id": "exposed-child",
+      "title": "An infant is sent away",
+      "summary": "Laius and Jocasta's child is given to a shepherd to be destroyed. The shepherd preserves him out of pity and passes him to another herdsman.",
+      "episodeIds": ["memories", "corinth", "recognition"]
+    },
+    {
+      "id": "corinthian-childhood",
+      "title": "A childhood in Corinth",
+      "summary": "The child is raised by Polybus and Merope and believes they are his birth parents. Their adoptive relationship is disclosed much later.",
+      "episodeIds": ["memories", "corinth"]
+    },
+    {
+      "id": "departure-corinth",
+      "title": "Oedipus leaves Corinth",
+      "summary": "An oracle predicts patricide and incest. Believing Polybus and Merope to be his biological parents, Oedipus stays away from Corinth to avoid harming them.",
+      "episodeIds": ["memories", "corinth"]
+    },
+    {
+      "id": "crossroads",
+      "title": "Violence at the crossroads",
+      "summary": "Oedipus kills an older man and members of his company in a dispute, not knowing the man is Laius. Jocasta's account raises suspicion; later parentage evidence establishes its family significance.",
+      "episodeIds": ["accusation", "memories", "recognition"]
+    },
+    {
+      "id": "sphinx",
+      "title": "The Sphinx is defeated",
+      "summary": "Oedipus answers the Sphinx's riddle and becomes Thebes's celebrated deliverer. This earlier achievement shapes the citizens' expectations at the opening.",
+      "episodeIds": ["crisis", "accusation"]
+    },
+    {
+      "id": "royal-marriage",
+      "title": "A king and an unrecognized marriage",
+      "summary": "Oedipus becomes ruler and marries Jocasta, Laius's widow. Neither knows at the time that she is his mother.",
+      "episodeIds": ["crisis", "accusation", "recognition"]
+    },
+    {
+      "id": "plague",
+      "title": "Thebes suffers a plague",
+      "summary": "Citizens appeal for help. Creon's return from Delphi connects the emergency to the failure to punish Laius's murderer.",
+      "episodeIds": ["crisis", "investigation"]
+    },
+    {
+      "id": "testimony",
+      "title": "Testimony reveals identity",
+      "summary": "The Corinthian messenger and Laius's shepherd connect the infant's survival to Oedipus's present identity.",
+      "episodeIds": ["corinth", "recognition"]
+    },
+    {
+      "id": "consequences",
+      "title": "Discovery and its consequences",
+      "summary": "Jocasta dies and Oedipus blinds himself. Creon takes charge; Oedipus requests exile, but its completion is not staged.",
+      "episodeIds": ["aftermath"]
+    }
+  ],
+  "characters": [
+    {
+      "id": "oedipus",
+      "name": "Oedipus",
+      "aliases": ["Oedipous", "Oidipous"],
+      "role": "King of Thebes · the investigator",
+      "category": "Principal participant",
+      "description": "Celebrated for answering the Sphinx, Oedipus begins as a ruler committed to saving his city. His intelligence and persistence drive the investigation, while anger and fear can make him mistake opposition for conspiracy. He is both the seeker of the murderer and the person whose hidden past answers the question.",
+      "actions": "Sends Creon to Delphi, questions Tiresias and the witnesses, recognizes his parentage, and asks for exile after the catastrophe.",
+      "relationships": [
+        {
+          "characterId": "jocasta",
+          "label": "Wife and biological mother"
+        },
+        {
+          "characterId": "laius",
+          "label": "Biological father, killed without recognition"
+        },
+        {
+          "characterId": "polybus",
+          "label": "Adoptive father"
+        },
+        {
+          "characterId": "merope",
+          "label": "Adoptive mother"
+        },
+        {
+          "characterId": "creon",
+          "label": "Brother-in-law and maternal uncle"
+        }
+      ],
+      "themeIds": ["truth", "identity", "authority", "fate"],
+      "episodeIds": [
+        "crisis",
+        "investigation",
+        "accusation",
+        "authority",
+        "memories",
+        "corinth",
+        "recognition",
+        "aftermath"
+      ],
+      "passageIds": ["shared-burden", "last-light"]
+    },
+    {
+      "id": "jocasta",
+      "name": "Jocasta",
+      "aliases": ["Iocaste", "Iokaste"],
+      "role": "Queen of Thebes · the first to understand",
+      "category": "Principal participant",
+      "description": "Jocasta tries to settle the quarrel between Oedipus and Creon and reassure her husband about prophecy. Her recollections supply crucial evidence. When the messenger's story connects the present king to the abandoned infant, she understands the danger before Oedipus does and begs him to stop asking questions.",
+      "actions": "Recalls Laius's prophecy and death, recognizes the family connection, and withdraws from the investigation before her death is reported.",
+      "relationships": [
+        {
+          "characterId": "oedipus",
+          "label": "Husband and biological son"
+        },
+        {
+          "characterId": "laius",
+          "label": "Former husband"
+        },
+        {
+          "characterId": "creon",
+          "label": "Brother"
+        }
+      ],
+      "themeIds": ["truth", "fate", "identity"],
+      "episodeIds": [
+        "authority",
+        "memories",
+        "corinth",
+        "recognition",
+        "aftermath"
+      ],
+      "passageIds": ["three-roads", "stop-the-quest"]
+    },
+    {
+      "id": "creon",
+      "name": "Creon",
+      "aliases": ["Kreon"],
+      "role": "Jocasta's brother · a counterweight to power",
+      "category": "Principal participant",
+      "description": "Creon brings Apollo's response from Delphi and later defends himself against Oedipus's accusation of conspiracy. He asks to be judged on reasons rather than suspicion. At the end he manages the immediate aftermath and resists Oedipus's demand for instant exile until divine guidance can be consulted.",
+      "actions": "Reports the oracle, answers the conspiracy charge, and takes responsibility for Oedipus and the royal household after the discovery.",
+      "relationships": [
+        {
+          "characterId": "jocasta",
+          "label": "Sister"
+        },
+        {
+          "characterId": "oedipus",
+          "label": "Brother-in-law and nephew"
+        }
+      ],
+      "themeIds": ["authority", "truth"],
+      "episodeIds": ["crisis", "investigation", "authority", "aftermath"],
+      "passageIds": ["blood-stain", "reason-before-judgment"]
+    },
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "aliases": ["Teiresias"],
+      "role": "The blind prophet · knowledge without welcome",
+      "category": "Principal participant",
+      "description": "Tiresias possesses knowledge that Oedipus wants and then rejects. His physical blindness contrasts with his insight into the king's hidden identity. His reluctance to speak makes the scene difficult: he knows that disclosure can harm, but his silence appears to Oedipus as a refusal to help the city.",
+      "actions": "Initially resists questioning, accuses Oedipus, and foretells the exposure of his hidden relationships.",
+      "relationships": [
+        {
+          "characterId": "oedipus",
+          "label": "Prophetic accuser and unwilling witness"
+        },
+        {
+          "characterId": "creon",
+          "label": "The man who recommends consulting him"
+        }
+      ],
+      "themeIds": ["sight", "truth", "authority"],
+      "episodeIds": ["accusation"],
+      "passageIds": ["accusation-truth"]
+    },
+    {
+      "id": "laius",
+      "name": "Laius",
+      "aliases": ["Laios"],
+      "role": "The former king · the absent center",
+      "category": "Background figure",
+      "description": "Laius is already dead when the play opens, yet the unresolved killing organizes its action. He is Jocasta's former husband and Oedipus's biological father. The prophecy concerning his son, the exposure of that child, and his death at the crossroads are reconstructed through later testimony rather than performed onstage.",
+      "actions": "His earlier attempt to prevent the prophecy and his death form the history the present investigation must reconstruct.",
+      "relationships": [
+        {
+          "characterId": "jocasta",
+          "label": "Wife"
+        },
+        {
+          "characterId": "oedipus",
+          "label": "Biological son and unknowing killer"
+        },
+        {
+          "characterId": "shepherd",
+          "label": "Household servant"
+        }
+      ],
+      "themeIds": ["fate", "identity"],
+      "episodeIds": ["investigation", "memories", "recognition"],
+      "passageIds": ["three-roads", "pity-for-the-child"]
+    },
+    {
+      "id": "polybus",
+      "name": "Polybus",
+      "aliases": ["Polybos"],
+      "role": "King of Corinth · the presumed father",
+      "category": "Background figure",
+      "description": "Polybus raised Oedipus as his son in Corinth. Oedipus's belief that this adoptive parent is his biological father shapes his attempt to escape the oracle. News that Polybus has died naturally appears reassuring until the messenger reveals the adoption, changing the meaning of that apparent escape.",
+      "actions": "Raises Oedipus before the play; his reported death prompts the messenger's disclosure.",
+      "relationships": [
+        {
+          "characterId": "merope",
+          "label": "Wife"
+        },
+        {
+          "characterId": "oedipus",
+          "label": "Adopted son"
+        },
+        {
+          "characterId": "messenger",
+          "label": "The man who brought the infant to him"
+        }
+      ],
+      "themeIds": ["fate", "identity"],
+      "episodeIds": ["memories", "corinth"],
+      "passageIds": ["not-by-blood"]
+    },
+    {
+      "id": "merope",
+      "name": "Merope",
+      "aliases": [],
+      "role": "Queen of Corinth · the presumed mother",
+      "category": "Background figure",
+      "description": "Merope is Polybus's wife and Oedipus's adoptive mother. She does not appear onstage, but his fear of marrying her keeps him from returning to Corinth even after Polybus dies. Her role shows how a sincere effort to avoid wrongdoing can depend on a mistaken understanding of family identity.",
+      "actions": "Raises Oedipus in the earlier background; his continuing fear concerning her motivates further questions.",
+      "relationships": [
+        {
+          "characterId": "polybus",
+          "label": "Husband"
+        },
+        {
+          "characterId": "oedipus",
+          "label": "Adopted son"
+        }
+      ],
+      "themeIds": ["fate", "identity"],
+      "episodeIds": ["memories", "corinth"],
+      "passageIds": ["not-by-blood"]
+    },
+    {
+      "id": "messenger",
+      "name": "The Corinthian Messenger",
+      "aliases": ["Messenger from Corinth", "Corinthian messenger"],
+      "role": "The bearer of good news · an unexpected witness",
+      "category": "Principal participant",
+      "description": "The messenger arrives with news of Polybus's death and the possibility of Oedipus returning to Corinth. Trying to remove the king's fear, he reveals that Polybus was not his biological father. The visitor who seems to close the question instead opens the path to recognizing Oedipus's true parentage.",
+      "actions": "Reports Polybus's death, reveals the adoption, and identifies the shepherd who gave him the infant.",
+      "relationships": [
+        {
+          "characterId": "oedipus",
+          "label": "Rescued him as an infant"
+        },
+        {
+          "characterId": "polybus",
+          "label": "Delivered the child to him"
+        },
+        {
+          "characterId": "shepherd",
+          "label": "Received the infant from him"
+        }
+      ],
+      "themeIds": ["truth", "fate", "identity"],
+      "episodeIds": ["corinth", "recognition"],
+      "passageIds": ["not-by-blood"]
+    },
+    {
+      "id": "shepherd",
+      "name": "Laius's Shepherd",
+      "aliases": ["Herdsman", "Herd of Laius", "Theban shepherd"],
+      "role": "The reluctant witness · the final connection",
+      "category": "Principal participant",
+      "description": "A servant of Laius, the shepherd preserves the infant he was instructed to destroy. When questioned years later, he struggles to avoid disclosing what he knows. His testimony joins the royal child of Thebes to the adopted son of Corinth and makes the identity of the investigator clear.",
+      "actions": "Spares the infant out of pity and ultimately confirms the child's origin under questioning.",
+      "relationships": [
+        {
+          "characterId": "laius",
+          "label": "Former master"
+        },
+        {
+          "characterId": "jocasta",
+          "label": "Gave him the infant"
+        },
+        {
+          "characterId": "messenger",
+          "label": "Entrusted the infant to him"
+        },
+        {
+          "characterId": "oedipus",
+          "label": "Preserved him as a baby and later testifies to his birth"
+        }
+      ],
+      "themeIds": ["truth", "identity", "fate"],
+      "episodeIds": ["memories", "corinth", "recognition"],
+      "passageIds": ["pity-for-the-child"]
+    },
+    {
+      "id": "chorus",
+      "name": "The Chorus",
+      "aliases": ["Theban elders", "Chorus of Theban Elders"],
+      "role": "The city's elders · a changing public voice",
+      "category": "Collective voice",
+      "description": "The Chorus responds to the crisis, debates the credibility of accusations, and reflects on divine power and human fortune. Its members are not an all-knowing narrator: their confidence and uncertainty shift as evidence arrives. Their final words ask the audience to reconsider how a life should be judged.",
+      "actions": "Prays for Thebes, mediates conflict, responds to discoveries, and closes with a reflection on human happiness.",
+      "relationships": [
+        {
+          "characterId": "oedipus",
+          "label": "Ruler whom they support and later pity"
+        },
+        {
+          "characterId": "creon",
+          "label": "Hear his defense and intervention"
+        }
+      ],
+      "themeIds": ["fate", "authority", "truth"],
+      "episodeIds": ["crisis", "investigation", "authority", "aftermath"],
+      "passageIds": ["mortal-happiness"]
+    }
+  ],
+  "themes": [
+    {
+      "id": "fate",
+      "title": "Fate and free will",
+      "question": "If the outcome is foretold, what remains within a person's control?",
+      "discussion": "The oracle seems to describe a future the characters cannot escape. Yet the tragedy gives sustained attention to decisions: Laius and Jocasta try to destroy their child, the shepherd spares him, Oedipus leaves Corinth, and witnesses choose whether to speak. The prediction does not make these choices emotionally or ethically empty. Each person acts with a partial understanding of the situation, and attempts to prevent disaster help establish the conditions in which it occurs. The crossroads can therefore be read as more than a symbol of a freely chosen route: it is a meeting point of actions whose consequences no participant can see completely. A useful reading distinguishes the events foretold from the responses characters make when they encounter suffering or uncertainty. The play does not provide a simple formula for dividing divine power from human agency. It makes the audience confront how both can occupy the same action. Oedipus's determination is not merely a flaw to remove; without it, Thebes's unanswered public crisis would remain. The difficult question is how responsible action is possible when knowledge is limited.",
+      "alternative": "A fate-centered reading emphasizes the oracle's fulfillment. An ethical reading gives more weight to the characters' conduct within that fulfillment; the two need not cancel each other.",
+      "passageIds": ["three-roads", "pity-for-the-child", "mortal-happiness"],
+      "episodeIds": ["memories", "corinth", "recognition", "aftermath"]
+    },
+    {
+      "id": "truth",
+      "title": "Truth and knowledge",
+      "question": "Is the pursuit of truth still admirable when it destroys the seeker's security?",
+      "discussion": "Oedipus begins with a public obligation: finding Laius's killer promises relief for Thebes. Truth appears to be the route from disorder to repair. As the inquiry advances, however, it threatens the investigator's own marriage, authority, and sense of origin. Tiresias's refusal and Jocasta's later plea introduce the possibility that knowledge can harm. Neither response makes ignorance an uncomplicated refuge. The crime and family relationships already exist whether Oedipus acknowledges them or not. What changes is his ability to understand the life he has been living. The play also distinguishes information from recognition. Tiresias states the accusation early, but a statement alone does not persuade Oedipus. The messenger and shepherd supply connections that transform isolated claims into an intelligible account. This makes the investigation useful for thinking about evidence: confidence, status, and repetition are not enough to establish a conclusion. At the same time, the audience must face the cost of valid conclusions. The tragedy asks what people owe to truth and what care they owe to those who must bear it.",
+      "alternative": "Persistence can be read as courage and civic duty, or as an inability to recognize limits. A supported interpretation should account for both the investigation's public need and its personal cost.",
+      "passageIds": ["accusation-truth", "stop-the-quest", "last-light"],
+      "episodeIds": ["investigation", "accusation", "corinth", "recognition"]
+    },
+    {
+      "id": "sight",
+      "title": "Sight and blindness",
+      "question": "What is the difference between looking at something and understanding it?",
+      "discussion": "The contrast between the sighted Oedipus and the blind Tiresias unsettles ordinary assumptions about knowledge. Oedipus can see the people before him but cannot identify his own relationship to them. Tiresias cannot see physically but understands the hidden conditions of the king's life. This does not mean that blindness is a universal guarantee of wisdom, or that the play reduces disability to a simple metaphor. The contrast belongs to a particular dramatic conflict over whose knowledge can be trusted. Images of light, darkness, and seeing become especially intense at recognition. Oedipus addresses the light when he finally understands his history, and the later self-blinding separates physical vision from the knowledge he can no longer undo. The order matters: he knows before he blinds himself. The act does not magically give him insight; it follows insight and expresses his response to shame, grief, and unbearable relationships. Reading the imagery closely reveals a tragedy in which increased understanding does not produce increased comfort. What becomes visible to the mind can make the familiar world impossible to face.",
+      "alternative": "The imagery can suggest the limits of human understanding, while Oedipus's own explanation also makes self-blinding an individual response to his relationships and suffering.",
+      "passageIds": ["accusation-truth", "last-light"],
+      "episodeIds": ["accusation", "recognition", "aftermath"]
+    },
+    {
+      "id": "authority",
+      "title": "Pride and the limits of authority",
+      "question": "When does confidence in one's judgment become a refusal to listen?",
+      "discussion": "Oedipus's authority begins with achievement. He answered the Sphinx when others could not, and the citizens reasonably hope he can save them again. His opening response combines initiative with concern for public suffering. The tragedy becomes more difficult when those qualities are placed beside his treatment of disagreement. Tiresias's reluctance becomes, in his eyes, obstruction; an accusation becomes evidence of a political plot. Creon asks for a hearing, but Oedipus repeatedly treats his own suspicion as sufficient judgment. The issue is therefore more precise than a general warning against pride. A ruler's power can make premature certainty dangerous to everyone who must answer him. Intelligence does not remove the need for patience, reasons, and correction. Nor should the ending be reduced to a punishment for one bad personality trait: Oedipus did not knowingly choose his birth or the hidden family relationships. A strong interpretation examines how confidence influences the manner of the investigation without claiming that anger created every element of the tragedy. His early service and later vulnerability both matter to an assessment of leadership.",
+      "alternative": "His forcefulness can look like necessary urgency during a civic emergency. The counterargument asks whether urgency justifies turning untested suspicions into threats.",
+      "passageIds": [
+        "shared-burden",
+        "reason-before-judgment",
+        "mortal-happiness"
+      ],
+      "episodeIds": ["crisis", "accusation", "authority", "aftermath"]
+    },
+    {
+      "id": "identity",
+      "title": "Identity and responsibility",
+      "question": "How should responsibility be understood when someone acts without knowing who others are?",
+      "discussion": "Oedipus understands himself through several roles: son of Polybus and Merope, solver of the Sphinx, husband of Jocasta, ruler of Thebes. Recognition does not erase the actions associated with those roles; it changes the relationships through which he must interpret them. The messenger's account of adoption is decisive because it breaks an assumption that had shaped his effort to avoid the oracle. Biological descent, upbringing, public achievement, and personal intention no longer form a single secure story. This creates a difficult question of responsibility. Oedipus killed a man, but did not know he was his father. He married Jocasta, but did not know she was his mother. The distinction between an act and knowledge of its full meaning should not be discarded, even though the consequences are devastating. The play presents religious pollution, civic judgment, emotional guilt, and deliberate intention as related but not identical concerns. An interpretation that simply declares him innocent or guilty can miss that tension. His response after discovery shows how a person can accept a burden whose circumstances they did not fully understand.",
+      "alternative": "Readers may distinguish moral blame from tragic consequence. Others emphasize the obligations Oedipus accepts once he knows, especially after publicly binding the city to punish Laius's killer.",
+      "passageIds": ["not-by-blood", "pity-for-the-child", "last-light"],
+      "episodeIds": ["memories", "corinth", "recognition", "aftermath"]
+    }
+  ],
+  "techniques": [
+    {
+      "id": "dramatic-irony",
+      "title": "Dramatic irony",
+      "definition": "A difference between a character's understanding and what the audience knows or can recognize.",
+      "example": "Oedipus curses Laius's murderer without understanding that the words apply to himself. For spectators familiar with the myth, his confident declaration carries a meaning that he cannot yet hear.",
+      "passageIds": ["blood-stain", "accusation-truth"]
+    },
+    {
+      "id": "foreshadowing",
+      "title": "Foreshadowing",
+      "definition": "A detail or statement that prepares a later development, even when its full importance is not yet clear.",
+      "example": "Tiresias's references to Oedipus's hidden family relationships point toward the later testimony. The early language of seeing and not seeing also prepares the imagery surrounding recognition.",
+      "passageIds": ["accusation-truth", "last-light"]
+    },
+    {
+      "id": "recognition",
+      "title": "Recognition · anagnorisis",
+      "definition": "A movement from ignorance to knowledge that changes how people and their relationships are understood.",
+      "example": "The shepherd's confirmation joins Oedipus's identity to the abandoned child of Laius and Jocasta. The discovery changes his understanding of the crossroads encounter and his marriage at once.",
+      "passageIds": ["pity-for-the-child", "last-light"]
+    },
+    {
+      "id": "reversal",
+      "title": "Reversal · peripeteia",
+      "definition": "A turn in which an action's result moves toward the opposite of what was expected or intended.",
+      "example": "The Corinthian messenger tries to reassure Oedipus, but revealing the adoption leads toward his ruin. Aristotle uses this episode when explaining reversal in Poetics, Part XI.",
+      "passageIds": ["not-by-blood", "stop-the-quest"]
+    }
+  ],
+  "passages": [
+    {
+      "id": "shared-burden",
+      "title": "The burden of a city",
+      "excerpt": "Speak before all; the burden that I bear\nIs more for these my subjects than myself.",
+      "speaker": "Oedipus",
+      "characterId": "oedipus",
+      "locator": "Opening scene: Oedipus asks Creon to report the oracle publicly.",
+      "context": "Creon offers to speak privately. Oedipus insists that the citizens should hear news concerning the whole city.",
+      "analysis": "The promise of public accountability gives the investigation a generous beginning. Later suspicion complicates this initial willingness to hear and share information.",
+      "themeIds": ["authority", "truth"],
+      "episodeId": "crisis",
+      "sourceId": "storr"
+    },
+    {
+      "id": "blood-stain",
+      "title": "An unresolved wrong",
+      "excerpt": "This stain of blood makes shipwreck of our state.",
+      "speaker": "Creon",
+      "characterId": "creon",
+      "locator": "Creon's return from Delphi: his explanation of the city's pollution.",
+      "context": "Apollo's response connects the suffering in Thebes to the unpunished murder of Laius.",
+      "analysis": "A public crisis is given a hidden cause. The image of a shipwreck makes the city's danger collective, while the blood-stain turns a past crime into a present responsibility.",
+      "themeIds": ["fate", "identity"],
+      "episodeId": "investigation",
+      "sourceId": "storr"
+    },
+    {
+      "id": "accusation-truth",
+      "title": "The seeker and the sought",
+      "excerpt": "I say thou art the murderer of the man\nWhose murderer thou pursuest.",
+      "speaker": "Tiresias",
+      "characterId": "tiresias",
+      "locator": "The confrontation with Tiresias: his explicit accusation against Oedipus.",
+      "context": "After resisting the king's demands, Tiresias directly identifies Oedipus as Laius's killer.",
+      "analysis": "The sentence collapses the distinction between investigator and criminal. Its truth is already spoken, but Oedipus cannot yet connect it to an account of his own life.",
+      "themeIds": ["truth", "sight", "identity"],
+      "episodeId": "accusation",
+      "sourceId": "storr"
+    },
+    {
+      "id": "reason-before-judgment",
+      "title": "Listen, then judge",
+      "excerpt": "To make reply. Then having heard me, judge.",
+      "speaker": "Creon",
+      "characterId": "creon",
+      "locator": "The quarrel with Creon: his request for an opportunity to answer.",
+      "context": "Oedipus has accused Creon of plotting against him. Creon asks that judgment follow a hearing.",
+      "analysis": "Creon's ordering of listening before judgment contrasts with a ruler's temptation to treat suspicion as certainty. The problem is not a lack of intelligence but the misuse of confidence and authority.",
+      "themeIds": ["authority", "truth"],
+      "episodeId": "authority",
+      "sourceId": "storr"
+    },
+    {
+      "id": "three-roads",
+      "title": "A place becomes a clue",
+      "excerpt": "No natives, at a spot where three roads meet.",
+      "speaker": "Jocasta",
+      "characterId": "jocasta",
+      "locator": "Jocasta's account of Laius's death, after the quarrel with Creon.",
+      "context": "Jocasta recounts a report that Laius was killed by strangers at a crossroads. Oedipus recognizes the location.",
+      "analysis": "A seemingly incidental geographical detail links two stories. Jocasta intends reassurance, but the detail gives Oedipus a reason to suspect his own involvement.",
+      "themeIds": ["fate", "truth"],
+      "episodeId": "memories",
+      "sourceId": "storr"
+    },
+    {
+      "id": "not-by-blood",
+      "title": "A family assumption overturned",
+      "excerpt": "Since Polybus was naught to thee in blood.",
+      "speaker": "The Corinthian Messenger",
+      "characterId": "messenger",
+      "locator": "The Corinthian messenger's explanation of Oedipus's adoption.",
+      "context": "The messenger attempts to ease Oedipus's fear concerning Merope by explaining that his Corinthian parents were not his biological parents.",
+      "analysis": "A fact offered as comfort removes the foundation of Oedipus's identity. The reversal happens through the messenger's attempt to help, not through an unrelated new disaster.",
+      "themeIds": ["identity", "fate", "truth"],
+      "episodeId": "corinth",
+      "sourceId": "storr"
+    },
+    {
+      "id": "stop-the-quest",
+      "title": "The cost of continuing",
+      "excerpt": "Oh, as thou carest for thy life, give o’er\nThis quest.",
+      "speaker": "Jocasta",
+      "characterId": "jocasta",
+      "locator": "Jocasta's appeal after the messenger identifies a connection to Laius's shepherd.",
+      "context": "Jocasta sees the implications of the testimony and asks Oedipus to abandon his questions. He misreads her concern.",
+      "analysis": "The search for knowledge is neither effortless nor harmless. Her plea makes readers ask whether truth must be pursued when it threatens the people seeking it.",
+      "themeIds": ["truth", "identity"],
+      "episodeId": "corinth",
+      "sourceId": "storr"
+    },
+    {
+      "id": "pity-for-the-child",
+      "title": "An act of pity",
+      "excerpt": "Through pity, master, for the babe.",
+      "speaker": "Laius's Shepherd",
+      "characterId": "shepherd",
+      "locator": "The final interrogation: the shepherd explains why he spared the infant.",
+      "context": "The shepherd admits that he passed the child to another herdsman instead of carrying out the instruction to destroy him.",
+      "analysis": "An act intended to preserve life becomes part of the chain leading to catastrophe. The line complicates any account in which every consequence follows from malicious intention.",
+      "themeIds": ["fate", "identity"],
+      "episodeId": "recognition",
+      "sourceId": "storr"
+    },
+    {
+      "id": "last-light",
+      "title": "Sight at the moment of knowledge",
+      "excerpt": "O light, may I behold thee nevermore!",
+      "speaker": "Oedipus",
+      "characterId": "oedipus",
+      "locator": "Oedipus's recognition, immediately after the shepherd's confirmation.",
+      "context": "The pieces of Oedipus's birth, marriage, and killing have converged. He now understands what he previously rejected.",
+      "analysis": "The appeal to light turns the language of seeing into a painful paradox. Recognition arrives before the later self-blinding: bodily sight and understanding do not develop together.",
+      "themeIds": ["sight", "truth", "identity"],
+      "episodeId": "recognition",
+      "sourceId": "storr"
+    },
+    {
+      "id": "mortal-happiness",
+      "title": "How should a life be judged?",
+      "excerpt": "Therefore wait to see life’s ending ere thou count one mortal blest;",
+      "speaker": "The Chorus",
+      "characterId": "chorus",
+      "locator": "The closing speech of the Chorus, at the end of Oedipus the King.",
+      "context": "After Oedipus's fall, the Chorus contrasts his earlier eminence with his present suffering.",
+      "analysis": "The final judgment looks beyond a single success or moment of power. It asks the audience to consider the instability of prosperity and the limits of judging a life before its course is complete.",
+      "themeIds": ["fate", "authority"],
+      "episodeId": "aftermath",
+      "sourceId": "storr"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-oracle",
+      "category": "Story",
+      "prompt": "What does Creon's report identify as the unresolved cause of Thebes's pollution?",
+      "choices": [
+        "The unpunished murder of Laius",
+        "The departure of the Corinthian messenger",
+        "A dispute over the Sphinx's answer",
+        "The death of Polybus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apollo's instruction, as reported by Creon, directs the city to address Laius's murder. This gives Oedipus's investigation its immediate purpose.",
+      "passageId": "blood-stain"
+    },
+    {
+      "id": "q-crossroads",
+      "category": "Story",
+      "prompt": "Which detail in Jocasta's account makes Oedipus suspect his own involvement in Laius's death?",
+      "choices": [
+        "The color of a palace doorway",
+        "The place where three roads meet",
+        "The date of Polybus's death",
+        "The size of the Chorus"
+      ],
+      "correctIndex": 1,
+      "explanation": "The crossroads matches the setting of Oedipus's remembered violent encounter. A location links two previously separate accounts.",
+      "passageId": "three-roads"
+    },
+    {
+      "id": "q-adoption",
+      "category": "Story",
+      "prompt": "What does the Corinthian messenger reveal when trying to ease Oedipus's fear?",
+      "choices": [
+        "Creon wrote the oracle",
+        "Jocasta has left for Corinth",
+        "Polybus was not Oedipus's biological father",
+        "Laius survived the crossroads encounter"
+      ],
+      "correctIndex": 2,
+      "explanation": "The messenger explains the adoption. The news removes an assumption about Oedipus's identity and makes further inquiry necessary.",
+      "passageId": "not-by-blood"
+    },
+    {
+      "id": "q-ending",
+      "category": "Story",
+      "prompt": "Which statement accurately describes the play's ending?",
+      "choices": [
+        "Oedipus departs onstage into a completed exile",
+        "Jocasta returns to restore the royal household",
+        "Tiresias becomes king of Thebes",
+        "Oedipus requests exile, while Creon insists on consulting the gods"
+      ],
+      "correctIndex": 3,
+      "explanation": "Oedipus asks to be sent away, but Creon says divine guidance must be consulted. Do not import the later exile narrative into this play's completed stage action.",
+      "passageId": "mortal-happiness"
+    },
+    {
+      "id": "q-tiresias",
+      "category": "Characters",
+      "prompt": "Who accuses Oedipus before the later witnesses establish his parentage?",
+      "choices": ["Tiresias", "Merope", "Polybus", "Laius"],
+      "correctIndex": 0,
+      "explanation": "Tiresias states that Oedipus is the murderer he seeks. The accusation is spoken before Oedipus can understand and accept its basis.",
+      "passageId": "accusation-truth"
+    },
+    {
+      "id": "q-shepherd",
+      "category": "Characters",
+      "prompt": "Who says he spared the infant out of pity?",
+      "choices": ["Creon", "Laius's shepherd", "The Chorus", "Polybus"],
+      "correctIndex": 1,
+      "explanation": "The shepherd's account confirms the infant's origin and explains why the instruction to destroy him was not carried out.",
+      "passageId": "pity-for-the-child"
+    },
+    {
+      "id": "q-chorus",
+      "category": "Characters",
+      "prompt": "Which group closes the play by reflecting on the uncertainty of human happiness?",
+      "choices": [
+        "Corinthian soldiers",
+        "The palace servants",
+        "The Chorus of Theban elders",
+        "The children of Laius"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Chorus places Oedipus's fall within a wider reflection on judging human prosperity and a life's final course.",
+      "passageId": "mortal-happiness"
+    },
+    {
+      "id": "q-reversal",
+      "category": "Analysis",
+      "prompt": "Why is the Corinthian messenger's disclosure an example of reversal?",
+      "choices": [
+        "It changes the setting from Thebes to Athens",
+        "It replaces dialogue with a choral song",
+        "It introduces a new ruler from outside the story",
+        "An attempt to reassure Oedipus leads toward the discovery he fears"
+      ],
+      "correctIndex": 3,
+      "explanation": "The result moves against the messenger's intention. This connection between attempted comfort and disaster is Aristotle's example in Poetics, Part XI.",
+      "passageId": "not-by-blood"
+    },
+    {
+      "id": "q-irony",
+      "category": "Analysis",
+      "prompt": "What makes Oedipus's pursuit of Laius's murderer dramatically ironic?",
+      "choices": [
+        "The investigator is unknowingly pursuing himself",
+        "The murder is unrelated to the city",
+        "The audience is forbidden to know any background",
+        "Oedipus is pretending not to remember a known father"
+      ],
+      "correctIndex": 0,
+      "explanation": "The contrast lies between Oedipus's understanding and the significance available to an audience familiar with the myth. He does not knowingly investigate himself at the beginning.",
+      "passageId": "accusation-truth"
+    },
+    {
+      "id": "q-responsibility",
+      "category": "Analysis",
+      "prompt": "Which interpretation is best supported by the play's treatment of identity and responsibility?",
+      "choices": [
+        "Consequences always prove deliberate malicious intent",
+        "An action's consequences and the actor's knowledge must both be considered",
+        "Oedipus knew his birth parents before leaving Corinth",
+        "The shepherd's pity has no effect on the events"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oedipus does not recognize his father or mother when the central acts occur. The tragedy nevertheless makes their consequences unavoidable, inviting a distinction between intention, knowledge, and responsibility.",
+      "passageId": "pity-for-the-child"
+    }
+  ],
+  "glossary": [
+    {
+      "id": "tragedy",
+      "term": "Tragedy",
+      "definition": "A dramatic form that presents serious action and suffering. Here, discovery changes the meaning of a ruler's life and brings a devastating reversal."
+    },
+    {
+      "id": "hamartia",
+      "term": "Hamartia",
+      "definition": "Often discussed as an error or failing in tragic action. Its meaning is interpretively contested; it is not a guaranteed synonym for pride."
+    },
+    {
+      "id": "hubris",
+      "term": "Hubris",
+      "definition": "Overbearing conduct or arrogant disregard for limits. Discuss particular actions and evidence rather than using it as an explanation for every event."
+    },
+    {
+      "id": "anagnorisis",
+      "term": "Anagnorisis",
+      "definition": "Recognition: a change from ignorance to knowledge, especially about identity or relationships."
+    },
+    {
+      "id": "peripeteia",
+      "term": "Peripeteia",
+      "definition": "Reversal: a turn in the action toward an opposite result, such as reassurance becoming the route to disaster."
+    },
+    {
+      "id": "dramatic-irony",
+      "term": "Dramatic irony",
+      "definition": "A gap between a character's understanding and the meaning an audience can perceive."
+    },
+    {
+      "id": "chorus",
+      "term": "Chorus",
+      "definition": "A collective dramatic voice that sings, responds, questions, and reflects. The Theban elders are participants in the play, not an all-knowing narrator."
+    },
+    {
+      "id": "catharsis",
+      "term": "Catharsis",
+      "definition": "Aristotle's term associated with tragedy's effects through pity and fear. Its exact interpretation is debated; avoid treating it simply as a guaranteed emotional release."
+    }
+  ],
+  "prompts": [
+    {
+      "id": "pursuit",
+      "prompt": "Is Oedipus's pursuit of truth admirable? Support your answer with a moment or passage from the play."
+    },
+    {
+      "id": "responsibility",
+      "prompt": "How should Oedipus's responsibility be judged when he acts without knowing his family relationships?"
+    },
+    {
+      "id": "leadership",
+      "prompt": "What does the play suggest about leadership under pressure? Compare Oedipus's opening response with his treatment of disagreement."
+    },
+    {
+      "id": "interpretation",
+      "prompt": "Which interpretation of fate, knowledge, sight, or identity do you find most convincing? Explain your evidence and address an alternative reading."
+    }
+  ],
+  "contexts": [
+    {
+      "id": "origins",
+      "title": "A myth older than the play",
+      "body": [
+        "Oedipus belongs to an inherited Greek mythic tradition, not a story invented from nothing by Sophocles. Homer's Odyssey already refers to Oedipus and his mother, called Epicaste there, in Book 11. Different ancient tellings do not agree on every detail. That matters when approaching a familiar legend: knowledge of another version must not silently replace what this particular play presents.",
+        "Sophocles makes the discovery itself the center of the drama. The important acts in Oedipus's earlier life have happened before the curtain of the present action: the infant's survival, adoption in Corinth, departure, crossroads encounter, and marriage. Rather than staging these as a continuous biography, the play reconstructs them through accusation, memory, and testimony. The audience watches an existing past become newly intelligible.",
+        "Thebes is the narrative setting; fifth-century Greek theatrical culture is the context of the work's composition and performance. This guide separates the two. Its eight episodes are editorial divisions for study, and the chronological view is a reconstruction of events discussed in the drama."
+      ],
+      "sourceIds": ["homer", "storr"]
+    },
+    {
+      "id": "sophocles",
+      "title": "Sophocles: dramatist and citizen",
+      "body": [
+        "Sophocles lived approximately 496–406 BCE and came from Colonus near Athens. Alongside Aeschylus and Euripides, he is one of the major surviving voices of Athenian tragedy. Ancient accounts credit him with a large dramatic output, but only seven tragedies survive complete. His career also included civic responsibilities, connecting his life to the political community for which the plays were made.",
+        "Oedipus Rex is also known as Oedipus the King and Oedipus Tyrannus. Its exact first-performance date is uncertain; this guide does not assign a precise year. Oedipus at Colonus and Antigone concern the same legendary family, but their later story events should not be folded into the ending of this play.",
+        "Sophocles' dramatic achievement here is visible in the construction of the inquiry. People arrive for particular reasons, disclose what they know, and alter the meaning of earlier scenes. A ruler's personal confidence meets evidence he cannot control. The work's force comes from that unfolding dramatic action, not simply from the shocking outline of the myth."
+      ],
+      "sourceIds": ["sophocles-bio", "storr"]
+    },
+    {
+      "id": "theatre",
+      "title": "A tragedy before a public audience",
+      "body": [
+        "Greek tragedy developed within a public performance culture associated with festivals of Dionysus. The audience encountered speech, song, and collective response, rather than a private novel narrated from one mind. The Chorus and the exchanges before the palace connect personal suffering to questions affecting the wider community.",
+        "At the opening, the Theban elders and the citizens need their ruler to act. As the inquiry changes direction, the Chorus's reactions help the audience register uncertainty, loyalty, fear, and pity. Its judgments are part of the drama: it does not know everything at the outset.",
+        "The palace threshold concentrates attention on what becomes public and what remains within. Important violence is reported rather than visually reenacted in the central dialogue. The website's architecture, masks, and vase-inspired figures evoke Greek artistic culture, but they are modern illustrations. Surviving theatre buildings do not provide a simple exact reconstruction of the stage on which Sophocles' play was first performed."
+      ],
+      "sourceIds": ["met-theatre", "storr"]
+    },
+    {
+      "id": "form",
+      "title": "How the tragedy is built",
+      "body": [
+        "The plot follows an investigation rather than a chronological life story. A public problem produces questions; answers create new questions; separate witnesses eventually establish a relationship the investigator could not previously see. This concentration gives the play a powerful forward movement even though much of its essential material belongs to the past.",
+        "Dialogue turns knowledge into conflict. Tiresias and Oedipus possess different understandings; Creon contests an accusation; Jocasta's reassurance becomes a clue. The messenger and shepherd do not simply deliver background information. Their accounts change what earlier words and actions mean. The Chorus punctuates these exchanges with a collective voice.",
+        "Recurring images of sight, light, pollution, and navigation connect the action to questions of understanding and civic danger. Recognition and reversal meet when the effort to remove fear reveals the very truth feared. Aristotle's Poetics makes this conjunction an important example of complex plotting. Use the Analysis page to connect these formal features to particular passages rather than treating them as labels to memorize."
+      ],
+      "sourceIds": ["storr", "poetics"]
+    },
+    {
+      "id": "legacy",
+      "title": "Why the work remains worth reading",
+      "body": [
+        "Aristotle uses Oedipus when explaining recognition and reversal in Poetics, Parts X–XI. He identifies the messenger's intended reassurance as an action that produces its opposite. This early critical reception gives a concrete reason for studying the play's construction: the story became an example for thinking about how dramatic events generate meaning.",
+        "The questions also remain open to argument. What makes a leader trustworthy? How do people judge evidence that threatens their identity? Can someone be responsible for consequences they did not understand? These are the guide's interpretive questions, not claims that every later reader has found the same lesson.",
+        "A productive encounter with the work moves from a broad theme to a specific scene, then returns to the theme with a more careful argument. Oedipus's persistence can invite admiration and criticism at once. The ending offers no comfortable restoration that erases suffering. Its lasting value for this project lies in making readers reason through tension, evidence, and the limits of their own first conclusions."
+      ],
+      "sourceIds": ["poetics", "storr"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "storr",
+      "title": "Oedipus the King",
+      "author": "Sophocles",
+      "translator": "F. Storr",
+      "url": "https://www.gutenberg.org/cache/epub/31/pg31-images.html",
+      "note": "1912 Loeb translation, in Project Gutenberg eBook 31. Only Oedipus the King is used for the guide's story and excerpts. Locators describe scenes, not unverified line numbers. Accessed 11 November 2026."
+    },
+    {
+      "id": "poetics",
+      "title": "Poetics, Parts X–XI",
+      "author": "Aristotle",
+      "translator": "S. H. Butcher",
+      "url": "https://classics.mit.edu/Aristotle/poetics.1.1.html",
+      "note": "Internet Classics Archive. Primary critical source for recognition, reversal, and the messenger example. Accessed 11 November 2026."
+    },
+    {
+      "id": "met-theatre",
+      "title": "Theater in Ancient Greece",
+      "author": "Colette Hemingway",
+      "url": "https://www.metmuseum.org/essays/theater-in-ancient-greece",
+      "note": "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History, October 2004. Historical context for performance and theatre; artwork on this website is modern interpretation. Accessed 11 November 2026."
+    },
+    {
+      "id": "sophocles-bio",
+      "title": "Who was Sophocles?",
+      "author": "THEATRON, King's College London",
+      "url": "https://kvl.cch.kcl.ac.uk/THEATRON/biographys/biosophocles.html",
+      "note": "Biographical reference for Sophocles' life, civic activity, and surviving works. Approximate dates are retained; this guide does not assert a precise premiere date for Oedipus Rex. Accessed 11 November 2026."
+    },
+    {
+      "id": "homer",
+      "title": "Odyssey, Book 11, Oedipus and Epicaste",
+      "author": "Homer",
+      "translator": "Samuel Butler",
+      "url": "https://beta.perseus.tufts.edu/urn%3Acts%3AgreekLit%3Atlg0012.tlg002.perseus-eng4%3A11.266/",
+      "note": "Perseus Digital Library. Earlier literary witness to the Oedipus tradition; distinct from the narrative details of Sophocles' play. Accessed 11 November 2026."
+    }
+  ],
+  "revelations": [
+    {
+      "id": "oracle-recalled",
+      "eventId": "oracle-to-laius",
+      "episodeId": "memories",
+      "claim": "Jocasta recounts the warning that Laius would die by his son's hand, but argues that the reported deaths of father and infant disproved it.",
+      "speakerLabel": "Jocasta",
+      "informedParty": "Oedipus and the listening Chorus",
+      "evidenceStatus": "recollection",
+      "passageIds": ["three-roads"]
+    },
+    {
+      "id": "oracle-confirmed",
+      "eventId": "oracle-to-laius",
+      "episodeId": "recognition",
+      "claim": "The shepherd confirms that fear of the predicted patricide motivated the instruction to destroy the royal child.",
+      "speakerLabel": "Laius's shepherd",
+      "informedParty": "Oedipus, the Corinthian messenger, and those present",
+      "evidenceStatus": "confirmation",
+      "passageIds": ["pity-for-the-child"]
+    },
+    {
+      "id": "exposure-recalled",
+      "eventId": "exposed-child",
+      "episodeId": "memories",
+      "claim": "Jocasta describes the infant's pierced ankles and abandonment. Her belief that he died is not yet tested against the surviving witnesses.",
+      "speakerLabel": "Jocasta",
+      "informedParty": "Oedipus and the listening Chorus",
+      "evidenceStatus": "recollection",
+      "passageIds": ["three-roads"]
+    },
+    {
+      "id": "survival-reported",
+      "eventId": "exposed-child",
+      "episodeId": "corinth",
+      "claim": "The messenger says he received the infant from another shepherd and released his wounded feet; he does not yet establish the birth parents.",
+      "speakerLabel": "The Corinthian messenger",
+      "informedParty": "Oedipus, Jocasta, and the listening Chorus",
+      "evidenceStatus": "testimony",
+      "passageIds": ["not-by-blood"]
+    },
+    {
+      "id": "survival-confirmed",
+      "eventId": "exposed-child",
+      "episodeId": "recognition",
+      "claim": "The shepherd admits that Jocasta entrusted the royal child to him for destruction, but he passed the infant to the messenger out of pity.",
+      "speakerLabel": "Laius's shepherd",
+      "informedParty": "Oedipus, the Corinthian messenger, and those present",
+      "evidenceStatus": "confirmation",
+      "passageIds": ["pity-for-the-child"]
+    },
+    {
+      "id": "corinth-family-believed",
+      "eventId": "corinthian-childhood",
+      "episodeId": "memories",
+      "claim": "Oedipus names Polybus and Merope as his parents when recounting his upbringing. Biological parentage remains his belief, not an established fact.",
+      "speakerLabel": "Oedipus",
+      "informedParty": "Jocasta and the listening Chorus",
+      "evidenceStatus": "recollection",
+      "passageIds": ["three-roads"]
+    },
+    {
+      "id": "adoption-disclosed",
+      "eventId": "corinthian-childhood",
+      "episodeId": "corinth",
+      "claim": "The messenger explains that Polybus received Oedipus from him as a child, overturning the king's assumption about his biological father.",
+      "speakerLabel": "The Corinthian messenger",
+      "informedParty": "Oedipus, Jocasta, and the listening Chorus",
+      "evidenceStatus": "testimony",
+      "passageIds": ["not-by-blood"]
+    },
+    {
+      "id": "departure-recalled",
+      "eventId": "departure-corinth",
+      "episodeId": "memories",
+      "claim": "Oedipus recalls the oracle about killing his father and marrying his mother, and explains that he stayed away from Corinth to avoid fulfillment.",
+      "speakerLabel": "Oedipus",
+      "informedParty": "Jocasta and the listening Chorus",
+      "evidenceStatus": "recollection",
+      "passageIds": ["three-roads"]
+    },
+    {
+      "id": "departure-explained",
+      "eventId": "departure-corinth",
+      "episodeId": "corinth",
+      "claim": "Oedipus explains his absence from Corinth to the messenger; the fear still concerns Polybus and Merope because he does not yet know of the adoption.",
+      "speakerLabel": "Oedipus",
+      "informedParty": "The Corinthian messenger, with Jocasta and the Chorus present",
+      "evidenceStatus": "recollection",
+      "passageIds": ["not-by-blood"]
+    },
+    {
+      "id": "killer-accused",
+      "eventId": "crossroads",
+      "episodeId": "accusation",
+      "claim": "Tiresias names Oedipus as Laius's murderer. He does not give the crossroads account that will later connect Oedipus's memory to the accusation.",
+      "speakerLabel": "Tiresias",
+      "informedParty": "Oedipus and the listening Chorus",
+      "evidenceStatus": "accusation",
+      "passageIds": ["accusation-truth"]
+    },
+    {
+      "id": "crossroads-compared",
+      "eventId": "crossroads",
+      "episodeId": "memories",
+      "claim": "Jocasta describes Laius's death at three roads; Oedipus recalls his own violent encounter there. The resemblance raises suspicion without resolving his parentage.",
+      "speakerLabel": "Jocasta and Oedipus",
+      "informedParty": "Each other and the listening Chorus",
+      "evidenceStatus": "recollection",
+      "passageIds": ["three-roads"]
+    },
+    {
+      "id": "patricide-recognized",
+      "eventId": "crossroads",
+      "episodeId": "recognition",
+      "claim": "With his parentage established, Oedipus recognizes the killing he described as his father's murder. The shepherd's decisive new testimony concerns the infant's identity.",
+      "speakerLabel": "Oedipus, responding to the shepherd",
+      "informedParty": "Oedipus and those hearing his recognition",
+      "evidenceStatus": "confirmation",
+      "passageIds": ["pity-for-the-child", "last-light"]
+    },
+    {
+      "id": "sphinx-remembered",
+      "eventId": "sphinx",
+      "episodeId": "crisis",
+      "claim": "The priest recalls Oedipus's deliverance of Thebes from the Sphinx, explaining why the citizens now seek his help again.",
+      "speakerLabel": "The priest of Zeus",
+      "informedParty": "Oedipus and the assembled citizens; the audience receives the background",
+      "evidenceStatus": "recollection",
+      "passageIds": ["shared-burden"]
+    },
+    {
+      "id": "sphinx-claimed",
+      "eventId": "sphinx",
+      "episodeId": "accusation",
+      "claim": "Oedipus invokes his success against the Sphinx to challenge Tiresias's authority, contrasting his own intelligence with the prophet's failure to help then.",
+      "speakerLabel": "Oedipus",
+      "informedParty": "Tiresias and the listening Chorus",
+      "evidenceStatus": "recollection",
+      "passageIds": ["accusation-truth"]
+    },
+    {
+      "id": "marriage-established",
+      "eventId": "royal-marriage",
+      "episodeId": "crisis",
+      "claim": "Oedipus calls Creon his consort's brother, establishing the present royal household. The hidden mother-son relationship within the marriage remains unrecognized.",
+      "speakerLabel": "Oedipus",
+      "informedParty": "The audience receives the household background; the characters already know the marriage",
+      "evidenceStatus": "testimony",
+      "passageIds": ["shared-burden"]
+    },
+    {
+      "id": "marriage-accused",
+      "eventId": "royal-marriage",
+      "episodeId": "accusation",
+      "claim": "Tiresias declares that the sought murderer is both son and husband to the woman who bore him, exposing a relationship Oedipus rejects.",
+      "speakerLabel": "Tiresias",
+      "informedParty": "Oedipus and the listening Chorus",
+      "evidenceStatus": "accusation",
+      "passageIds": ["accusation-truth"]
+    },
+    {
+      "id": "marriage-recognized",
+      "eventId": "royal-marriage",
+      "episodeId": "recognition",
+      "claim": "The shepherd's account identifies Jocasta as the infant's mother, allowing Oedipus to recognize that his wife is also his biological mother.",
+      "speakerLabel": "Laius's shepherd and Oedipus",
+      "informedParty": "Oedipus and those present; Jocasta has already withdrawn",
+      "evidenceStatus": "confirmation",
+      "passageIds": ["pity-for-the-child", "last-light"]
+    },
+    {
+      "id": "plague-described",
+      "eventId": "plague",
+      "episodeId": "crisis",
+      "claim": "The priest describes failed crops, dying herds, and losses among the people, making the city's suffering the public reason for approaching Oedipus.",
+      "speakerLabel": "The priest of Zeus",
+      "informedParty": "Oedipus hears the petition; the audience receives the civic situation",
+      "evidenceStatus": "testimony",
+      "passageIds": ["shared-burden"]
+    },
+    {
+      "id": "plague-oracle-reported",
+      "eventId": "plague",
+      "episodeId": "investigation",
+      "claim": "Creon reports Apollo's instruction to remove the pollution of Laius's unpunished murder, connecting the city's present crisis to a past crime.",
+      "speakerLabel": "Creon",
+      "informedParty": "Oedipus and the citizens listening to the public report",
+      "evidenceStatus": "testimony",
+      "passageIds": ["blood-stain"]
+    },
+    {
+      "id": "identity-inquiry-opened",
+      "eventId": "testimony",
+      "episodeId": "corinth",
+      "claim": "The messenger's adoption story connects Oedipus's infancy to a servant of Laius, but the birth parents still require the other shepherd's testimony.",
+      "speakerLabel": "The Corinthian messenger",
+      "informedParty": "Oedipus, Jocasta, and the listening Chorus",
+      "evidenceStatus": "testimony",
+      "passageIds": ["not-by-blood", "stop-the-quest"]
+    },
+    {
+      "id": "identity-inquiry-resolved",
+      "eventId": "testimony",
+      "episodeId": "recognition",
+      "claim": "The shepherd confirms the royal child's origin and transfer, joining the messenger's account to Oedipus's life and producing recognition.",
+      "speakerLabel": "Laius's shepherd, questioned alongside the Corinthian messenger",
+      "informedParty": "Oedipus and those present",
+      "evidenceStatus": "confirmation",
+      "passageIds": ["pity-for-the-child", "last-light"]
+    },
+    {
+      "id": "consequences-disclosed",
+      "eventId": "consequences",
+      "episodeId": "aftermath",
+      "claim": "Jocasta's death and Oedipus's self-blinding become public. Oedipus requests exile, but Creon insists on consulting the gods; departure into exile is not completed.",
+      "speakerLabel": "The palace messenger, Oedipus, and Creon",
+      "informedParty": "The Chorus and audience receive the aftermath and the unresolved exile request",
+      "evidenceStatus": "confirmation",
+      "passageIds": ["mortal-happiness"]
+    }
+  ]
+}

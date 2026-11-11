@@ -1,0 +1,372 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 780px) 220px;
+  justify-content: space-between;
+  gap: 64px;
+  align-items: start;
+}
+.rail {
+  position: sticky;
+  top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-bronze);
+}
+.rail h2 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+}
+.rail a {
+  display: block;
+  padding: 9px 0;
+  font-size: 16px;
+  text-decoration: none;
+}
+.quiz {
+  min-width: 0;
+}
+.quiz h2 {
+  font-size: 32px;
+}
+.quiz h3 {
+  font-size: 27px;
+  margin: 28px 0 24px;
+}
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 15px;
+  margin: 26px 0 10px;
+  color: var(--color-muted-ink);
+}
+.choices {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 18px;
+  margin: 0;
+  border: 1px solid var(--color-bronze);
+  border-radius: var(--radius);
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.choice:has(input:checked) {
+  border-color: var(--color-burgundy);
+  background: #7a263a09;
+}
+.choice input {
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  accent-color: var(--color-burgundy);
+  margin: 0;
+}
+.feedback {
+  margin-top: 28px;
+  padding: 24px 0;
+  border-top: 1px solid var(--color-bronze);
+  border-bottom: 1px solid var(--color-stone);
+}
+.feedback h4 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin: 0 0 16px;
+  color: var(--color-burgundy);
+}
+.feedback .actions {
+  margin-top: 24px;
+}
+.review {
+  margin-top: 36px;
+}
+.review details {
+  padding: 20px 0;
+  border-top: 1px solid var(--color-stone);
+}
+.review summary {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.review summary span {
+  font-size: 14px;
+  color: var(--color-burgundy);
+}
+.review p {
+  font-size: 16px;
+  margin: 16px 0;
+}
+.reflections,
+.ordering {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-stone);
+}
+.reflection {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-stone);
+}
+.reflection label {
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.reflection textarea {
+  width: 100%;
+  font-size: 18px;
+}
+.wordCount {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-muted-ink);
+  margin: 6px 0 18px;
+}
+.storageSettings {
+  margin-top: 32px;
+}
+.storageSettings summary {
+  min-height: 44px;
+  color: var(--color-burgundy);
+  text-decoration: underline;
+}
+.orderList {
+  padding: 0;
+  list-style: none;
+  counter-reset: event;
+  margin: 26px 0;
+}
+.orderList li {
+  counter-increment: event;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-stone);
+}
+.orderList li:before {
+  content: counter(event);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-bronze);
+  width: 20px;
+  font-size: 16px;
+}
+.orderList li > span {
+  flex: 1;
+}
+.orderList li > div {
+  display: flex;
+  gap: 8px;
+}
+.orderList button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-bronze);
+  border-radius: var(--radius);
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) 180px;
+    gap: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .rail {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    width: 100%;
+  }
+  .rail h2 {
+    width: 100%;
+    margin: 0;
+  }
+  .rail a {
+    padding: 8px 0;
+  }
+  .quiz h3 {
+    font-size: 23px;
+  }
+  .choice {
+    padding: 14px;
+    font-size: 17px;
+  }
+  .reflection label {
+    font-size: 20px;
+  }
+  .reflections,
+  .ordering {
+    margin-top: 44px;
+  }
+  .orderList li > span {
+    font-size: 16px;
+  }
+  .progressLabel {
+    font-size: 14px;
+  }
+}
+.recommendations {
+  margin: 32px 0;
+  padding: 24px 0;
+  border-top: 1px solid var(--color-bronze);
+  border-bottom: 1px solid var(--color-stone);
+}
+.recommendations h3 {
+  font-size: 25px;
+  margin: 0 0 18px;
+}
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+.recommendations li {
+  font-size: 16px;
+}
+.recommendations li strong {
+  display: block;
+  margin-bottom: 6px;
+}
+.recommendations li a {
+  display: block;
+}
+.builder {
+  margin: 32px 0 40px;
+  border-top: 1px solid var(--color-bronze);
+  border-bottom: 1px solid var(--color-stone);
+  padding: 28px 0;
+}
+.builder > h3 {
+  font-size: 29px;
+}
+.builder > p {
+  font-size: 16px;
+}
+.builder > select,
+.builder > textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+.builder > select {
+  white-space: normal;
+}
+.builder > textarea {
+  min-height: 100px;
+}
+.builder fieldset {
+  margin: 6px 0 24px;
+}
+.builder legend {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.evidenceChoices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+.evidenceChoices label {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  border-top: 1px solid var(--color-stone);
+  line-height: 1.5;
+  cursor: pointer;
+}
+.evidenceChoices input {
+  min-height: 18px;
+  height: 18px;
+  width: 18px;
+  accent-color: var(--color-burgundy);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.evidenceChoices small {
+  display: block;
+  color: var(--color-muted-ink);
+  font-size: 13px;
+}
+.builder > .actions {
+  margin: 8px 0 20px;
+}
+.assembled {
+  background: var(--color-stone);
+  padding: 22px;
+  margin: 20px 0;
+}
+.assembled h4 {
+  font-size: 20px;
+  margin: 0 0 16px;
+}
+.assembled p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.reflections > h2 {
+  font-size: 36px;
+  color: var(--color-burgundy);
+}
+.progressLabel {
+  font-variant-numeric: tabular-nums;
+}
+.quiz > h2 {
+  font-size: 36px;
+}
+.feedback {
+  background: #7a263a06;
+  padding: 24px;
+}
+@media (max-width: 767px) {
+  .recommendations ul,
+  .evidenceChoices {
+    grid-template-columns: 1fr;
+  }
+  .builder > h3 {
+    font-size: 26px;
+  }
+  .reflections > h2,
+  .quiz > h2 {
+    font-size: 30px;
+  }
+  .feedback {
+    padding: 20px 16px;
+  }
+  .assembled {
+    padding: 18px;
+  }
+}

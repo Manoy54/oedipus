@@ -1,0 +1,31 @@
+{
+  "name": "oedipus-rex",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node scripts/preview.mjs",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@fontsource/libre-baskerville": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
+    "@phosphor-icons/react": "^2.1.10",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5"
+  }
+}

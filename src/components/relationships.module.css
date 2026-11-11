@@ -1,0 +1,427 @@
+.explorer {
+  margin: 24px 0 72px;
+  min-width: 0;
+}
+.introduction {
+  max-width: 72ch;
+  margin-bottom: 36px;
+}
+.introduction h2 {
+  font-size: clamp(30px, 3.4vw, 44px);
+}
+.introduction p {
+  color: var(--color-muted-ink);
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.composition {
+  display: grid;
+  grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+  column-gap: clamp(32px, 5vw, 64px);
+  align-items: start;
+}
+.identity,
+.connections {
+  min-width: 0;
+}
+.portrait {
+  max-width: 340px;
+  margin: 0 0 24px;
+}
+.portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.portrait figcaption {
+  font-size: 13px;
+}
+.selectedName {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.selectedRole {
+  color: var(--color-bronze);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.selectedDescription {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  max-width: 64ch;
+}
+.profileLink {
+  display: inline-block;
+  min-height: 44px;
+  padding: 8px 0;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.evidence {
+  margin-top: 16px;
+}
+.filters {
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--color-stone);
+  min-width: 0;
+}
+.filters legend {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.filterControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filterButton {
+  border: 1px solid var(--color-bronze);
+  border-radius: var(--radius);
+  color: var(--color-ink);
+  background: transparent;
+  padding: 10px 14px;
+  min-height: 44px;
+  font-size: 15px;
+  line-height: 1.4;
+  transition:
+    color 180ms ease-out,
+    background-color 180ms ease-out;
+}
+.filterButton:hover {
+  background: var(--color-stone);
+}
+.filterButton[aria-pressed="true"] {
+  background: var(--color-burgundy);
+  border-color: var(--color-burgundy);
+  color: var(--color-paper);
+}
+.selectionStatus {
+  margin: 18px 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.networkDescription {
+  color: var(--color-muted-ink);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 66ch;
+  margin-bottom: 0;
+}
+.network {
+  position: relative;
+  height: 600px;
+  margin: 12px 0 24px;
+  min-width: 0;
+}
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+.line {
+  fill: none;
+  stroke: var(--color-bronze);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+.biological {
+  stroke: var(--color-burgundy);
+}
+.adoptive {
+  stroke-dasharray: 4 4;
+}
+.marital {
+  stroke: var(--color-burgundy);
+  stroke-dasharray: 8 4;
+}
+.political {
+  stroke: var(--color-muted-ink);
+  stroke-dasharray: 10 3 2 3;
+}
+.investigative {
+  stroke: var(--color-ink);
+  stroke-dasharray: 2 4;
+}
+.person {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 124px;
+  min-height: 90px;
+  border: 1px solid var(--color-stone);
+  border-radius: var(--radius);
+  padding: 8px 6px;
+  background: var(--color-paper);
+  color: var(--color-muted-ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition:
+    border-color 180ms ease-out,
+    background-color 180ms ease-out,
+    color 180ms ease-out;
+}
+.person img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+.person span {
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.person:hover {
+  border-color: var(--color-bronze);
+  color: var(--color-ink);
+}
+.person:active:not(:disabled) {
+  transform: translate(-50%, -50%);
+}
+.connectedPerson {
+  border-color: var(--color-bronze);
+  color: var(--color-ink);
+}
+.selectedPerson,
+.selectedPerson:hover {
+  border-color: var(--color-burgundy);
+  background: var(--color-burgundy);
+  color: var(--color-paper);
+}
+.selectedPerson img {
+  background: var(--color-paper);
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-stone);
+}
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-muted-ink);
+}
+.legendItem svg {
+  width: 28px;
+  height: 8px;
+}
+.textOverview {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-bronze);
+}
+.textOverview > h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.listIntroduction {
+  color: var(--color-muted-ink);
+  font-size: 16px;
+  max-width: 70ch;
+  margin-bottom: 24px;
+}
+.relationshipList,
+.personTies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.relationshipPerson {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+  gap: 24px 36px;
+  padding: 24px 0;
+  border-top: 1px solid var(--color-stone);
+}
+.personHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+.personHeading button {
+  background: transparent;
+  border: 0;
+  color: var(--color-burgundy);
+  font-size: 20px;
+  font-family: var(--font-display);
+  text-align: left;
+  line-height: 1.4;
+  padding: 0;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+.personHeading a {
+  display: inline-block;
+  font-size: 14px;
+  min-height: 44px;
+  padding-top: 8px;
+}
+.personTies li + li {
+  margin-top: 20px;
+}
+.personTies li > p:last-child {
+  color: var(--color-muted-ink);
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 72ch;
+  margin: 0;
+}
+.tieHeading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+  margin: 0 0 6px;
+}
+.tieHeading strong {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.tieHeading span {
+  font-size: 13px;
+  color: var(--color-bronze);
+}
+.empty {
+  padding: 20px 0;
+}
+.empty p {
+  margin-bottom: 4px;
+}
+@media (max-width: 1100px) {
+  .composition {
+    grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
+    column-gap: 32px;
+  }
+  .person {
+    width: 104px;
+  }
+}
+@media (max-width: 900px) {
+  .composition {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 36px;
+  }
+  .identity {
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+    align-content: start;
+    gap: 0 32px;
+  }
+  .portrait {
+    grid-row: span 5;
+    margin-bottom: 0;
+  }
+  .selectedName {
+    margin-top: 16px;
+  }
+  .person {
+    width: 124px;
+  }
+}
+@media (max-width: 680px) {
+  .explorer {
+    margin-bottom: 48px;
+  }
+  .introduction {
+    margin-bottom: 24px;
+  }
+  .introduction p {
+    font-size: 18px;
+  }
+  .identity {
+    display: block;
+  }
+  .portrait {
+    width: min(340px, 100%);
+    margin: 0 auto 24px;
+  }
+  .selectedName {
+    font-size: 30px;
+  }
+  .selectedDescription {
+    font-size: 18px;
+  }
+  .filterControls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .filterButton {
+    padding: 10px 8px;
+  }
+  .network {
+    height: auto;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .desktopHint,
+  .lines {
+    display: none;
+  }
+  .person,
+  .person:active:not(:disabled) {
+    position: static;
+    transform: none;
+    width: 100%;
+    min-height: 100px;
+  }
+  .person span {
+    font-size: 15px;
+  }
+  .legend {
+    display: none;
+  }
+  .textOverview {
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+  .relationshipPerson {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 0;
+  }
+  .personHeading {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .personHeading button {
+    font-size: 19px;
+    max-width: 70%;
+  }
+  .personHeading a {
+    flex-shrink: 0;
+  }
+  .tieHeading {
+    display: block;
+  }
+  .tieHeading span {
+    display: block;
+    margin-top: 3px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .filterButton,
+  .person {
+    transition: none;
+  }
+}

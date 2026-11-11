@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/story/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/characters/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/analysis/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/passages/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/activities/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/about/",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/story/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/characters/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/analysis/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/passages/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/activities/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/about/",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1366,
+      "height": 768,
+      "primaryActionInsideViewport": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,144 @@
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.25fr auto;
+  gap: 20px;
+  align-items: end;
+  margin-top: 32px;
+}
+.filters input,
+.filters select {
+  width: 100%;
+}
+.resultsBar {
+  margin-top: 28px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  border-top: 1px solid var(--color-stone);
+}
+.resultsBar p {
+  margin: 0;
+  font-size: 16px;
+}
+.savedToggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.savedToggle input {
+  accent-color: var(--color-burgundy);
+  min-height: 20px;
+  width: 18px;
+  height: 18px;
+}
+.passage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 64px;
+  padding: 38px 0;
+  border-top: 1px solid var(--color-stone);
+}
+.passage h2 {
+  font-size: 27px;
+  margin-bottom: 16px;
+}
+.passage blockquote {
+  font-size: 28px;
+  max-width: 48ch;
+  white-space: pre-line;
+  margin: 18px 0 22px;
+}
+.attribution {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--color-burgundy);
+}
+.locator {
+  font-size: 15px;
+  color: var(--color-muted-ink);
+  max-width: 70ch;
+}
+.passageMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  font-size: 15px;
+}
+.passageMeta > a {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+}
+.themes {
+  display: grid;
+  gap: 8px;
+}
+.context {
+  max-width: 70ch;
+  margin: 18px 0;
+}
+.context summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 44px;
+  color: var(--color-burgundy);
+  font-size: 16px;
+}
+.context h3 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+.context p {
+  font-size: 17px;
+}
+.context[open] summary svg {
+  transform: rotate(180deg);
+}
+@media (max-width: 900px) {
+  .filters {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .passage {
+    gap: 32px;
+    grid-template-columns: minmax(0, 1fr) 180px;
+  }
+}
+@media (max-width: 600px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+  .passage {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0;
+  }
+  .passage blockquote {
+    font-size: 23px;
+  }
+  .passageMeta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+  }
+  .themes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .resultsBar {
+    align-items: start;
+  }
+  .passage h2 {
+    font-size: 25px;
+  }
+}

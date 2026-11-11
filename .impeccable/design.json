@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T08:46:20Z",
+  "title": "Design System: Oedipus Rex",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(0.150 0.0143 84.58)",
+          "oklch(0.264 0.0143 84.58)",
+          "oklch(0.379 0.0143 84.58)",
+          "oklch(0.493 0.0143 84.58)",
+          "oklch(0.607 0.0143 84.58)",
+          "oklch(0.721 0.0143 84.58)",
+          "oklch(0.836 0.0143 84.58)",
+          "oklch(0.950 0.0143 84.58)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal Ink",
+        "tonalRamp": [
+          "oklch(0.150 0.0073 67.47)",
+          "oklch(0.264 0.0073 67.47)",
+          "oklch(0.379 0.0073 67.47)",
+          "oklch(0.493 0.0073 67.47)",
+          "oklch(0.607 0.0073 67.47)",
+          "oklch(0.721 0.0073 67.47)",
+          "oklch(0.836 0.0073 67.47)",
+          "oklch(0.950 0.0073 67.47)"
+        ]
+      },
+      "burgundy": {
+        "role": "primary",
+        "displayName": "Burgundy",
+        "tonalRamp": [
+          "oklch(0.150 0.1171 9.78)",
+          "oklch(0.264 0.1171 9.78)",
+          "oklch(0.379 0.1171 9.78)",
+          "oklch(0.493 0.1171 9.78)",
+          "oklch(0.607 0.1171 9.78)",
+          "oklch(0.721 0.1171 9.78)",
+          "oklch(0.836 0.1171 9.78)",
+          "oklch(0.950 0.1171 9.78)"
+        ]
+      },
+      "bronze": {
+        "role": "secondary",
+        "displayName": "Bronze",
+        "tonalRamp": [
+          "oklch(0.150 0.0683 75.21)",
+          "oklch(0.264 0.0683 75.21)",
+          "oklch(0.379 0.0683 75.21)",
+          "oklch(0.493 0.0683 75.21)",
+          "oklch(0.607 0.0683 75.21)",
+          "oklch(0.721 0.0683 75.21)",
+          "oklch(0.836 0.0683 75.21)",
+          "oklch(0.950 0.0683 75.21)"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "tonalRamp": [
+          "oklch(0.150 0.0239 82.11)",
+          "oklch(0.264 0.0239 82.11)",
+          "oklch(0.379 0.0239 82.11)",
+          "oklch(0.493 0.0239 82.11)",
+          "oklch(0.607 0.0239 82.11)",
+          "oklch(0.721 0.0239 82.11)",
+          "oklch(0.836 0.0239 82.11)",
+          "oklch(0.950 0.0239 82.11)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(0.150 0.0122 81.77)",
+          "oklch(0.264 0.0122 81.77)",
+          "oklch(0.379 0.0122 81.77)",
+          "oklch(0.493 0.0122 81.77)",
+          "oklch(0.607 0.0122 81.77)",
+          "oklch(0.721 0.0122 81.77)",
+          "oklch(0.836 0.0122 81.77)",
+          "oklch(0.950 0.0122 81.77)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Home display",
+        "purpose": "Home title on charcoal; current responsive overrides are recorded in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Page headline",
+        "purpose": "Shared route headings."
+      },
+      "title": {
+        "displayName": "Section title",
+        "purpose": "Global second-level headings; chapter, reading, character, and activity variants are described in DESIGN.md."
+      },
+      "body": {
+        "displayName": "Reading text",
+        "purpose": "Explanatory prose, with independent reading-column widths."
+      },
+      "label": {
+        "displayName": "Field label",
+        "purpose": "Semibold labels above input controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "mobile-menu",
+        "value": "0 12px 24px #211e1b14",
+        "purpose": "Separates the temporary mobile navigation from the flat reading surface."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "180ms ease-out",
+        "purpose": "Shared-button background/position, full-study episode chevrons, relationship filters, and network buttons."
+      },
+      {
+        "name": "exploration-arrow",
+        "value": "200ms ease-out",
+        "purpose": "Home exploration arrows respond to hover."
+      },
+      {
+        "name": "chapter-entrance",
+        "value": "220ms ease-out; translateY(5px) to translateY(0)",
+        "purpose": "Brief entrance when a different guided episode renders."
+      },
+      {
+        "name": "pressed-offset",
+        "value": "translateY(1px)",
+        "purpose": "Global button-press feedback; positioned network buttons preserve their placement."
+      },
+      {
+        "name": "chapter-arrow-offset",
+        "value": "translateX(5px)",
+        "purpose": "Small arrow response on Home exploration links."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "Applied throughout the interface when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "investigation-and-portrait-tight",
+        "value": "1100px"
+      },
+      {
+        "name": "desktop-tight",
+        "value": "1050px"
+      },
+      {
+        "name": "navigation-and-rails",
+        "value": "900px"
+      },
+      {
+        "name": "reading-stack",
+        "value": "767px"
+      },
+      {
+        "name": "relationship-grid",
+        "value": "680px"
+      },
+      {
+        "name": "passage-stack",
+        "value": "600px"
+      },
+      {
+        "name": "small-display",
+        "value": "390px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The burgundy primary action used to begin the investigation and continue reading or practice.",
+      "html": "<button class=\"ds-btn-primary\">Begin the investigation<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 22px;border:1px solid var(--color-burgundy);border-radius:var(--radius);font-family:var(--font-body);font-size:16px;font-weight:600;line-height:1.65;text-decoration:none;cursor:pointer;transition:background-color 180ms ease-out,transform 180ms ease-out;background:var(--color-burgundy);color:var(--color-paper)}.ds-btn-primary:hover{background:var(--color-ink);border-color:var(--color-ink)}.ds-btn-primary:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px;}.ds-btn-primary:active:not(:disabled){transform:translateY(1px)}.ds-btn-primary:disabled{cursor:not-allowed;opacity:.5}@media(max-width:767px){.ds-btn-primary{padding:11px 18px}}@media(prefers-reduced-motion:reduce){.ds-btn-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quiet outlined action for retry, recovery, copying, and ordering checks.",
+      "html": "<button class=\"ds-btn-secondary\">Show all characters</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 22px;border:1px solid var(--color-burgundy);border-radius:var(--radius);font-family:var(--font-body);font-size:16px;font-weight:600;line-height:1.65;text-decoration:none;cursor:pointer;transition:background-color 180ms ease-out,transform 180ms ease-out;background:transparent;color:var(--color-ink);border-color:var(--color-bronze)}.ds-btn-secondary:hover{background:var(--color-stone);color:var(--color-ink);border-color:var(--color-bronze)}.ds-btn-secondary:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px;}.ds-btn-secondary:active:not(:disabled){transform:translateY(1px)}.ds-btn-secondary:disabled{cursor:not-allowed;opacity:.5}@media(max-width:767px){.ds-btn-secondary{padding:11px 18px}}@media(prefers-reduced-motion:reduce){.ds-btn-secondary{transition:none}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "An underlined, labeled action that does not need filled-button emphasis.",
+      "html": "<button class=\"ds-text-action\">Expand all</button>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 0;border:0;background:none;color:var(--color-burgundy);font-family:var(--font-body);font-size:16px;line-height:1.65;text-decoration:underline;text-underline-offset:4px;cursor:pointer}.ds-text-action:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px;}.ds-text-action:active:not(:disabled){transform:translateY(1px)}.ds-text-action:disabled{cursor:not-allowed;opacity:.5}@media(prefers-reduced-motion:reduce){.ds-text-action{transition:none}}"
+    },
+    {
+      "name": "Labeled search field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "The bronze-boundary field used by character search and passage filters.",
+      "html": "<div class=\"ds-field-group\"><label for=\"ds-character-search\">Find a character</label><input id=\"ds-character-search\" type=\"search\" placeholder=\"Search a name or alternate spelling…\"></div>",
+      "css": ".ds-field-group{max-width:580px;color:var(--color-ink);font-family:var(--font-body);line-height:1.65}.ds-field-group label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}.ds-field-group input{width:100%;max-width:100%;min-height:46px;border:1px solid var(--color-bronze);border-radius:var(--radius);background:transparent;padding:10px 14px;font:inherit;font-size:18px;color:inherit}.ds-field-group input::placeholder{color:var(--color-muted-ink);opacity:1}.ds-field-group input:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px;}"
+    },
+    {
+      "name": "Desktop navigation",
+      "kind": "nav",
+      "description": "The current-page burgundy underline used by the shared seven-route shell.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Example site navigation\"><a href=\"#home\" aria-current=\"page\">Home</a><a href=\"#story\">Story</a><a href=\"#characters\">Characters</a></nav>",
+      "css": ".ds-nav{display:flex;gap:27px;align-items:center;font-family:var(--font-body);line-height:1.65}.ds-nav a{position:relative;padding:27px 0;color:var(--color-muted-ink);font-size:16px;text-decoration:none}.ds-nav a[aria-current]{color:var(--color-burgundy)}.ds-nav a[aria-current]::after{content:\"\";position:absolute;bottom:16px;left:0;right:0;height:2px;background:var(--color-burgundy)}.ds-nav a:hover{text-decoration-thickness:2px}.ds-nav a:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px;}"
+    },
+    {
+      "name": "Relationship filters",
+      "kind": "chip",
+      "refersTo": "relationship-filter",
+      "description": "Compact rectangular native buttons with stone hover and burgundy pressed state; these are not decorative pills.",
+      "html": "<fieldset class=\"ds-connection-filters\"><legend>Show connections</legend><div><button type=\"button\" aria-pressed=\"true\">All connections</button><button type=\"button\" aria-pressed=\"false\">Family</button><button type=\"button\" aria-pressed=\"false\">Political</button><button type=\"button\" aria-pressed=\"false\">Investigation</button></div></fieldset>",
+      "css": ".ds-connection-filters{margin:0;padding:0 0 18px;border:0;border-bottom:1px solid var(--color-stone);font-family:var(--font-body);color:var(--color-ink);line-height:1.65}.ds-connection-filters legend{padding:0;font-size:15px;font-weight:600;margin-bottom:12px}.ds-connection-filters>div{display:flex;flex-wrap:wrap;gap:8px}.ds-connection-filters button{border:1px solid var(--color-bronze);border-radius:var(--radius);color:var(--color-ink);background:transparent;padding:10px 14px;min-height:44px;font-family:var(--font-body);font-size:15px;line-height:1.4;cursor:pointer;transition:color 180ms ease-out,background-color 180ms ease-out}.ds-connection-filters button:hover{background:var(--color-stone)}.ds-connection-filters button[aria-pressed=\"true\"]{background:var(--color-burgundy);border-color:var(--color-burgundy);color:var(--color-paper)}.ds-connection-filters button:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px}.ds-connection-filters button:active{transform:translateY(1px)}@media(max-width:680px){.ds-connection-filters>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.ds-connection-filters button{padding:10px 8px}}@media(prefers-reduced-motion:reduce){.ds-connection-filters button{transition:none}}"
+    },
+    {
+      "name": "Guided episode navigation",
+      "kind": "nav",
+      "refersTo": "episode-current",
+      "description": "Sticky episode rail on desktop, replaced by a labeled native selector on phones; current and marked-read states retain text or icons.",
+      "html": "<nav class=\"ds-episode-rail\" aria-label=\"Investigation episodes\"><div class=\"ds-mobile-episodes\"><label for=\"ds-episode-jump\">Current episode</label><select id=\"ds-episode-jump\"><option>1. A City in Crisis</option><option selected>2. The Investigation Begins</option><option>3. A Difficult Accusation</option></select></div><h2>Your path</h2><ol><li><button type=\"button\"><span>01</span><span>A City in Crisis</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-label=\"Marked read\"><path d=\"M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z\"/></svg></button></li><li><button type=\"button\" aria-current=\"step\"><span>02</span><span>The Investigation Begins</span></button></li><li><button type=\"button\"><span>03</span><span>A Difficult Accusation</span></button></li></ol><p>1 marked read on this device.</p></nav>",
+      "css": ".ds-episode-rail{position:sticky;top:20px;max-width:174px;font-family:var(--font-body);color:var(--color-ink);line-height:1.65}.ds-episode-rail h2{font:600 15px var(--font-body);margin:0 0 14px}.ds-episode-rail ol{list-style:none;padding:0;margin:0 0 20px}.ds-episode-rail button{width:100%;display:flex;align-items:center;gap:10px;border:0;border-bottom:1px solid var(--color-stone);background:transparent;min-height:60px;padding:12px 10px;text-align:left;font-family:var(--font-body);font-size:15px;line-height:1.45;color:inherit;cursor:pointer}.ds-episode-rail button>span:first-child{font-size:12px;color:var(--color-bronze);font-variant-numeric:tabular-nums}.ds-episode-rail button[aria-current]{background:var(--color-burgundy);color:var(--color-paper)}.ds-episode-rail button[aria-current]>span:first-child{color:var(--color-paper)}.ds-episode-rail button:focus-visible,.ds-mobile-episodes select:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px}.ds-episode-rail button:active{transform:translateY(1px)}.ds-episode-rail p{font-size:15px;color:var(--color-muted-ink);margin:0 0 20px}.ds-mobile-episodes{display:none}.ds-mobile-episodes label{display:block;font-size:15px;font-weight:600;margin-bottom:8px}.ds-mobile-episodes select{width:100%;min-height:46px;border:1px solid var(--color-bronze);border-radius:var(--radius);background:transparent;padding:10px 14px;font-family:var(--font-body);font-size:16px;color:inherit}@media(max-width:767px){.ds-episode-rail{position:static;max-width:none}.ds-episode-rail h2,.ds-episode-rail ol{display:none}.ds-mobile-episodes{display:block;margin-bottom:14px}.ds-episode-rail>p{margin-bottom:0}}"
+    },
+    {
+      "name": "Inline evidence preview",
+      "kind": "custom",
+      "description": "Native in-flow evidence disclosure with literary quotation and attribution; the application supplies bookmark/copy actions and Close/Escape focus restoration.",
+      "html": "<details class=\"ds-evidence-preview\"><summary><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z\"/></svg><span>Read the evidence: The burden of a city</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"17\" height=\"17\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z\"/></svg></summary><div class=\"ds-evidence-content\"><h4>The burden of a city</h4><blockquote>“Speak before all; the burden that I bear\nIs more for these my subjects than myself.”</blockquote><p class=\"ds-evidence-attribution\">Oedipus · F. Storr, 1912</p><h5>In the scene</h5><p>Creon offers to speak privately. Oedipus insists that the citizens should hear news concerning the whole city.</p><div class=\"ds-evidence-actions\"><button type=\"button\" aria-pressed=\"false\">Bookmark</button><button type=\"button\">Copy passage</button></div><div class=\"ds-evidence-footer\"><a href=\"/passages/#shared-burden\">Open complete passage</a></div></div></details>",
+      "css": ".ds-evidence-preview{border-top:1px solid var(--color-bronze);border-bottom:1px solid var(--color-stone);margin:22px 0;background:transparent;font-family:var(--font-body);color:var(--color-ink);line-height:1.65}.ds-evidence-preview>summary{display:flex;align-items:center;gap:12px;min-height:52px;color:var(--color-burgundy);font-size:16px;font-weight:600;cursor:pointer;list-style:none}.ds-evidence-preview>summary::-webkit-details-marker{display:none}.ds-evidence-preview>summary::marker{content:\"\"}.ds-evidence-preview>summary>span{flex:1}.ds-evidence-preview>summary>svg{flex-shrink:0}.ds-evidence-preview[open]>summary>svg:last-child{transform:rotate(180deg)}.ds-evidence-content{padding:16px 0 24px;max-width:72ch}.ds-evidence-content h4{font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.3;margin:0 0 14px}.ds-evidence-content h5{font-family:var(--font-body);font-size:16px;font-weight:600;margin:20px 0 6px}.ds-evidence-content blockquote{font-family:var(--font-display);font-size:24px;line-height:1.65;white-space:pre-line;margin:12px 0 18px}.ds-evidence-content p{font-size:16px;margin:0 0 20px}.ds-evidence-content .ds-evidence-attribution{color:var(--color-burgundy);font-size:14px}.ds-evidence-actions,.ds-evidence-footer{display:flex;gap:16px 24px;flex-wrap:wrap;align-items:center}.ds-evidence-footer{margin-top:18px;font-size:15px}.ds-evidence-preview a,.ds-evidence-preview button{color:var(--color-burgundy);text-decoration:underline;text-underline-offset:4px}.ds-evidence-preview button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:none;border:0;padding:8px 0;font-family:var(--font-body);font-size:16px;line-height:1.65;cursor:pointer}.ds-evidence-preview a:hover{text-decoration-thickness:2px}.ds-evidence-preview summary:focus-visible,.ds-evidence-preview button:focus-visible,.ds-evidence-preview a:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px}.ds-evidence-preview button:active{transform:translateY(1px)}@media(max-width:600px){.ds-evidence-content blockquote{font-size:21px}.ds-evidence-content{padding-bottom:18px}.ds-evidence-footer{gap:12px 18px}}"
+    },
+    {
+      "name": "Quiz choice",
+      "kind": "custom",
+      "description": "A labeled native radio row with a bronze outline and restrained burgundy checked state.",
+      "html": "<label class=\"ds-choice\"><input type=\"radio\" name=\"ds-answer\" value=\"investigation\">An investigation into identity</label>",
+      "css": ".ds-choice{display:flex;align-items:center;gap:14px;padding:15px 18px;margin:0;border:1px solid var(--color-bronze);border-radius:var(--radius);font-family:var(--font-body);font-size:18px;line-height:1.65;font-weight:400;color:var(--color-ink);cursor:pointer}.ds-choice:has(input:checked){border-color:var(--color-burgundy);background:#7a263a09}.ds-choice input{width:18px;height:18px;min-height:18px;accent-color:var(--color-burgundy);margin:0}.ds-choice input:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px;}@media(max-width:767px){.ds-choice{padding:14px;font-size:17px}}"
+    },
+    {
+      "name": "Two-passage comparison",
+      "kind": "custom",
+      "description": "At most two titled, attributed excerpts in equal desktop columns, stacked at 767px; selection count and removal actions stay explicit.",
+      "html": "<section class=\"ds-comparison\" aria-label=\"Passage comparison\"><div class=\"ds-comparison-tray\"><span role=\"status\">2 of 2 passages selected</span><button type=\"button\">Clear comparison</button></div><div class=\"ds-comparison-pair\"><article><div class=\"ds-comparison-title\"><h3>The burden of a city</h3><button type=\"button\" aria-label=\"Remove The burden of a city from comparison\">Remove</button></div><blockquote>“Speak before all; the burden that I bear\nIs more for these my subjects than myself.”</blockquote><p class=\"ds-comparison-attribution\">Oedipus · F. Storr, 1912</p><p>Creon offers to speak privately. Oedipus insists that the citizens should hear news concerning the whole city.</p></article><article><div class=\"ds-comparison-title\"><h3>Listen, then judge</h3><button type=\"button\" aria-label=\"Remove Listen, then judge from comparison\">Remove</button></div><blockquote>“To make reply. Then having heard me, judge.”</blockquote><p class=\"ds-comparison-attribution\">Creon · F. Storr, 1912</p><p>Oedipus has accused Creon of plotting against him. Creon asks that judgment follow a hearing.</p></article></div></section>",
+      "css": ".ds-comparison{border-top:1px solid var(--color-bronze);padding:28px 0;margin:32px 0 10px;font-family:var(--font-body);color:var(--color-ink);line-height:1.65}.ds-comparison-tray{display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:15px;color:var(--color-burgundy);margin:22px 0 12px}.ds-comparison-pair{display:grid;grid-template-columns:1fr 1fr;gap:40px}.ds-comparison-pair article{min-width:0;border-top:1px solid var(--color-stone);padding:24px 0}.ds-comparison-title{display:flex;gap:18px;align-items:start;justify-content:space-between}.ds-comparison-title h3{font-family:var(--font-display);font-size:23px;font-weight:400;line-height:1.3;margin:0 0 16px}.ds-comparison-pair blockquote{font-family:var(--font-display);font-size:23px;white-space:pre-line;line-height:1.7;margin:24px 0}.ds-comparison-pair p{font-size:16px;margin:0 0 20px}.ds-comparison-pair .ds-comparison-attribution{color:var(--color-burgundy);font-size:14px}.ds-comparison button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:none;border:0;padding:8px 0;color:var(--color-burgundy);font-family:var(--font-body);font-size:16px;line-height:1.65;text-decoration:underline;text-underline-offset:4px;cursor:pointer}.ds-comparison-title button{font-size:14px;padding:0;min-height:36px}.ds-comparison button:focus-visible{outline:2px solid var(--color-burgundy);outline-offset:5px}.ds-comparison button:active{transform:translateY(1px)}@media(max-width:767px){.ds-comparison{margin:24px 0}.ds-comparison-pair{grid-template-columns:1fr;gap:0}.ds-comparison-pair blockquote{font-size:22px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A contemporary literary exhibition of Greek tragedy",
+    "overview": "The exhibition pairs a theatrical opening with calm, evidence-led reading. Charcoal stages give the title and Greek figures room to command attention; ivory invitations and reading areas carry the actions, explanations, and writing. Occasional burgundy source quotations punctuate the sequence. Large literary headings, modern vase-inspired artwork, fine rules, and familiar controls keep the experience serious and reflective.\n\nThis is the built second iteration of the identity approved in PLAN.md Sections 10 and 13. Each route has a distinct composition while retaining the same six colors, two font families, and flat reading surfaces. `src/app/globals.css`, `src/app/home.module.css`, and the current `src/components/*module.css` files supply the extracted values and states. The final desktop, mobile, detail, and tablet captures in `.impeccable/review-v2/` record the rendered result. `design-references/v2/` holds development references; `ASSETS.md` records shipping artwork and provenance.\n\nThe frontmatter records reused implementation values, not an additional theme layer. Spacing entries are recurring measurements extracted from CSS; the implementation has no spacing custom properties. Route-specific type sizes remain documented variants rather than a manufactured universal ramp.",
+    "keyCharacteristics": [
+      "Warm ivory reading areas, charcoal artwork stages, and occasional burgundy quotations.",
+      "Libre Baskerville headings and quotations; Source Sans 3 reading text and controls.",
+      "Flat, rule-separated evidence and writing workspaces with restrained framing.",
+      "One consistent family of modern Greek illustrations and deliberate meander boundaries.",
+      "Native controls, explicit selected and saved states, and reading order preserved as columns stack."
+    ],
+    "rules": [
+      {
+        "name": "The Shared Palette Rule",
+        "body": "Reuse the six global CSS color properties on every route. Checked choices and quiz feedback use faint transparent burgundy derivatives, not separate success or error palettes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Contrast Punctuation Rule",
+        "body": "Use the implemented charcoal artwork stages and occasional burgundy source quotations as distinct moments; keep sustained explanation, evidence details, and form work on paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Roles Rule",
+        "body": "Keep navigation, field labels, and control copy in the sans family even when a generated reference shows serif controls.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Reading Rule",
+        "body": "Preserve open reading space and fine separators; do not add shadowed panels around every paragraph, passage, or profile.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** reuse the six global palette tokens and shared font roles across routes and states.",
+      "**Do** use charcoal stages and occasional burgundy quotations to punctuate calm ivory reading.",
+      "**Do** keep evidence and interpretation distinct through source labels, quotation type, and fine rules.",
+      "**Do** preserve knowledge-before-conclusion order and full-width descriptions as layouts stack.",
+      "**Do** retain the explanatory relationship list and native keyboard-operable controls.",
+      "**Do** reuse shipping artwork, preserve meaningful figures, and identify it as a modern interpretation.",
+      "**Do** keep actions labeled, focus visible on each surface, and saved or selected states understandable through text or icons.",
+      "**Do** respect reduced motion and keep illustrations static."
+    ],
+    "donts": [
+      "**Don't** turn incidental illustration colors or mockup text into new design tokens or literary evidence.",
+      "**Don't** use serif text for form controls or decorative pseudo-Greek lettering for English.",
+      "**Don't** wrap every paragraph, passage, or profile in a shadowed card.",
+      "**Don't** add textures behind reading text, form fields, or feedback.",
+      "**Don't** communicate saved, selected, correct, or incorrect states with color alone.",
+      "**Don't** replace the relationship text alternative with a pointer-only diagram.",
+      "**Don't** expose later full-study interpretation inside an early guided evidence preview.",
+      "**Don't** present illustrations as authenticated ancient portraits, museum objects, or reconstructions."
+    ]
+  }
+}

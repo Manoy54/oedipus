@@ -1,0 +1,349 @@
+.hero {
+  margin: 24px -40px 0;
+  padding: 38px 40px 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.45fr;
+  gap: 20px;
+  align-items: center;
+}
+.heroCopy {
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+.heroCopy h1 {
+  font-size: clamp(70px, 7.2vw, 96px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  margin: 0 0 26px;
+}
+.invitation {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  padding: 22px 24px;
+  margin: 0 -20px 32px 0;
+  position: relative;
+}
+.subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 31px;
+  line-height: 1.3;
+  color: var(--color-burgundy);
+  letter-spacing: -0.03em;
+  margin: 0 0 16px;
+  padding-bottom: 4px;
+}
+.lead {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 37ch;
+  margin-bottom: 22px;
+}
+.invitation :global(.actions) {
+  gap: 14px;
+}
+.invitation :global(.actions) > a:last-child {
+  font-size: 15px;
+}
+.heroArt {
+  min-width: 0;
+}
+.heroArt img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.heroArt figcaption {
+  font-size: 13px;
+  color: var(--color-stone);
+  margin: 8px 0 24px;
+  text-align: right;
+  font-style: italic;
+}
+.hero > svg {
+  color: var(--color-stone);
+  opacity: 0.7;
+  height: 18px;
+}
+.hero :focus-visible {
+  outline-color: var(--color-paper);
+}
+.hero .invitation :focus-visible {
+  outline-color: var(--color-burgundy);
+}
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--color-stone);
+  padding: 24px 0;
+}
+.facts > div {
+  border-right: 1px solid var(--color-stone);
+  padding: 0 24px;
+}
+.facts > div:first-child {
+  padding-left: 0;
+}
+.facts > div:last-child {
+  border: 0;
+}
+.facts dt {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--color-muted-ink);
+  margin-bottom: 6px;
+}
+.facts dd {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin: 0;
+}
+.facts a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.introduction {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 96px;
+  margin: 80px 0;
+}
+.introduction h2 {
+  font-size: 38px;
+  margin-bottom: 26px;
+}
+.introduction p {
+  max-width: 68ch;
+}
+.introduction aside {
+  border-top: 1px solid var(--color-bronze);
+  padding-top: 24px;
+}
+.introduction aside img {
+  display: block;
+  float: right;
+  width: 120px;
+  margin: 0 0 18px 18px;
+}
+.introduction aside h3 {
+  font-size: 28px;
+}
+.introduction aside p {
+  color: var(--color-muted-ink);
+}
+.introduction aside a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+.quoteStage {
+  margin: 64px -40px;
+  padding: 48px 64px;
+  background: var(--color-burgundy);
+  color: var(--color-paper);
+}
+.quoteStage h2 {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 24px;
+}
+.quoteStage blockquote {
+  font-size: clamp(26px, 3.3vw, 42px);
+  line-height: 1.5;
+  max-width: 31ch;
+  white-space: pre-line;
+  margin: 0 0 24px;
+}
+.quoteStage p {
+  font-size: 14px;
+  color: var(--color-paper);
+  margin: 0 0 18px;
+}
+.quoteStage a {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--color-paper);
+  font-size: 16px;
+}
+.quoteStage :focus-visible {
+  outline-color: var(--color-paper);
+}
+.explore {
+  margin: 72px 0;
+}
+.pathGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 64px;
+}
+.path {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--color-stone);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.path h3 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+.path p {
+  font-size: 17px;
+  color: var(--color-muted-ink);
+  margin-bottom: 16px;
+  max-width: 42ch;
+}
+.path span {
+  color: var(--color-burgundy);
+  font-size: 15px;
+}
+.path > svg {
+  color: var(--color-burgundy);
+  transition: transform 200ms ease-out;
+}
+.path:hover > svg {
+  transform: translateX(5px);
+}
+.evidenceLink {
+  margin-top: 28px;
+  font-size: 17px;
+}
+.before {
+  max-width: 75ch;
+}
+.before h2 {
+  font-size: 26px;
+}
+.before p {
+  color: var(--color-muted-ink);
+  font-size: 16px;
+}
+.before a {
+  font-size: 16px;
+}
+@media (max-width: 1050px) {
+  .heroCopy h1 {
+    font-size: 76px;
+  }
+  .subtitle {
+    font-size: 26px;
+  }
+  .invitation {
+    padding: 20px;
+  }
+  .heroGrid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+  .lead {
+    font-size: 17px;
+  }
+  .facts dd {
+    font-size: 18px;
+  }
+  .introduction {
+    gap: 40px;
+  }
+  .introduction h2 {
+    font-size: 32px;
+  }
+  .quoteStage {
+    padding: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    margin: 16px -22px 0;
+    padding: 28px 22px 0;
+  }
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .heroCopy h1 {
+    font-size: 64px;
+    margin-bottom: 22px;
+  }
+  .heroCopy h1 br {
+    display: none;
+  }
+  .invitation {
+    margin: 0;
+    padding: 22px 20px;
+  }
+  .heroArt {
+    margin-top: 14px;
+  }
+  .heroArt figcaption {
+    text-align: left;
+    font-size: 12px;
+  }
+  .facts {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 0;
+  }
+  .facts > div {
+    padding: 0 16px;
+  }
+  .facts > div:nth-child(odd) {
+    padding-left: 0;
+  }
+  .facts > div:nth-child(even) {
+    border: 0;
+  }
+  .introduction {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin: 52px 0;
+  }
+  .introduction h2 br {
+    display: none;
+  }
+  .introduction aside img {
+    width: 100px;
+  }
+  .quoteStage {
+    margin: 44px -22px;
+    padding: 34px 24px;
+  }
+  .pathGrid {
+    grid-template-columns: 1fr;
+  }
+  .explore {
+    margin: 48px 0;
+  }
+  .path {
+    padding: 26px 0;
+  }
+}
+@media (max-width: 390px) {
+  .heroCopy h1 {
+    font-size: 54px;
+  }
+  .heroCopy h1 br {
+    display: block;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+  .invitation {
+    padding: 20px 16px;
+  }
+  .facts dd {
+    font-size: 17px;
+  }
+}
