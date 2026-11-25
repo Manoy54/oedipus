@@ -1,8 +1,13 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import { List, MaskSad } from "@phosphor-icons/react";
+import { Meander } from "./shell";
+import { List } from "@phosphor-icons/react";
 import s from "./shell.module.css";
+const ExhibitionNavMark = dynamic(() => import("./exhibition-nav-mark"));
+
 const links = [
   ["/", "Home"],
   ["/story/", "Story"],
@@ -14,33 +19,40 @@ const links = [
 ];
 export function Navigation() {
   const pathname = usePathname();
-  function items() {
+  const route = pathname.replace(/\/$/, "");
+  function items(animate = false) {
     return links.map(([href, name]) => (
       <Link
         key={href}
         href={href}
-        aria-current={
-          pathname.replace(/\/$/, "") === href.replace(/\/$/, "")
-            ? "page"
-            : undefined
-        }
+        aria-current={route === href.replace(/\/$/, "") ? "page" : undefined}
       >
         {name}
+        {animate && route === href.replace(/\/$/, "") && <ExhibitionNavMark />}
       </Link>
     ));
   }
   return (
     <header className={s.header}>
       <Link href="/" className={s.brand} aria-label="Oedipus Rex home">
-        <MaskSad size={28} weight="light" />
-        <span>Oedipus Rex</span>
+        <span className={s.seal}>
+          <Image
+            src="/images/theatrical-mask.webp"
+            width={44}
+            height={44}
+            alt=""
+          />
+        </span>
+        <span>
+          Oedipus <i>Rex</i>
+        </span>
       </Link>
       <nav className={s.desktop} aria-label="Main navigation">
-        {items()}
+        {items(true)}
       </nav>
       <details className={s.mobile}>
         <summary>
-          <List size={23} />
+          <List size={21} weight="bold" aria-hidden="true" />
           Menu
         </summary>
         <nav
@@ -53,6 +65,9 @@ export function Navigation() {
           {items()}
         </nav>
       </details>
+      <div className={s.frieze} aria-hidden="true">
+        <Meander patternId="navigation-meander" />
+      </div>
     </header>
   );
 }

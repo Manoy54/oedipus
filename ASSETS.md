@@ -151,3 +151,7 @@ Delivery verification: 14 WebP images total 927,940 bytes; 14 original PNGs are 
 
 The site icon at src/app/icon.png is a192px PNG derivative of theatrical-mask, optimized with sharp. It uses the same exact generation prompt and modern-interpretation attribution; its prompt sidecar is src/app/icon.png.json. No additional artwork was generated for the icon.
 
+
+## Home and Passages relief studies
+
+The Home Sphinx relief and the Passages book and mask still life are original modern interpretations generated with the built-in image generator for this redesign. The Home composition depicts Oedipus facing the Sphinx in carved relief. The Passages still life introduces the reading collection. Both are shipped as locally hosted WebP files with smaller mobile versions. The paper and stage grain is a locally generated, repeating translucent raster texture.

@@ -1,51 +1,121 @@
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: 80px;
+  --brass: #dec394;
+  --grain: url("/images/material-grain.png");
+  position: relative;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  border-bottom: 1px solid var(--color-stone);
-  position: relative;
-  z-index: 5;
+  min-height: 96px;
+  margin: 0 -40px;
+  padding: 14px 40px 24px;
+  color: var(--color-paper);
+  background:
+    var(--grain), linear-gradient(108deg, #6c2134, #511b2c 55%, #3a1922);
+  box-shadow:
+    inset 0 1px 0 #b88d65,
+    0 7px 14px -9px #382412a1;
 }
 .brand {
-  display: flex;
-  gap: 10px;
+  display: inline-flex;
   align-items: center;
-  text-decoration: none;
-  font-family: var(--font-display);
-  font-size: 22px;
+  gap: 13px;
+  color: var(--color-paper);
+  font: 700 29px/1.15 var(--font-display);
+  letter-spacing: -0.035em;
   white-space: nowrap;
-  color: var(--color-ink);
+  text-decoration: none;
 }
-.brand svg {
-  color: var(--color-bronze);
+.brand i {
+  color: var(--brass);
+  font-weight: 400;
+}
+.seal {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 54px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #b29a75;
+  background:
+    var(--grain), linear-gradient(140deg, #fff6dd, #d9c4a0 52%, #b79564);
+  box-shadow:
+    inset 0 0 0 2px #70542b,
+    inset 0 0 0 3px #edd7ad,
+    0 3px 6px #211e1b66;
+}
+.seal img {
+  display: block;
+  width: 76%;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+}
+.frieze {
+  position: absolute;
+  inset: auto 0 0;
+  height: 11px;
+  overflow: hidden;
+  pointer-events: none;
+  border-block: 1px solid #b7956480;
+  background: var(--grain), #211e1b70;
+}
+.frieze svg {
+  display: block;
+  width: 200%;
+  height: 18px;
+  transform: scale(0.5);
+  transform-origin: top left;
+  color: var(--brass);
+  opacity: 0.68;
 }
 .desktop {
   display: flex;
-  gap: 27px;
   align-items: center;
+  gap: 3px;
+}
+.desktop a,
+.mobile nav a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 15px;
+  color: var(--color-paper);
+  font: 600 17px/1.35 var(--font-body);
+  text-decoration: none;
 }
 .desktop a {
-  text-decoration: none;
   position: relative;
-  padding: 27px 0;
-  color: var(--color-muted-ink);
-  font-size: 16px;
+  isolation: isolate;
+}
+.desktop a:hover,
+.mobile nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 .desktop a[aria-current] {
-  color: var(--color-burgundy);
+  color: var(--color-ink);
 }
-.desktop a[aria-current]:after {
+.desktop a[aria-current]::before,
+.navMark {
   content: "";
   position: absolute;
-  bottom: 16px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--color-burgundy);
+  inset: 2px 0;
+  z-index: -1;
+  border-radius: var(--radius);
+  background: var(--grain), linear-gradient(150deg, #f5e2ca, #dec394);
+  box-shadow:
+    inset 0 1px 0 #fff6dd,
+    0 2px 5px #211e1b66;
+  pointer-events: none;
+}
+.desktop a:has(.navMark)::before {
+  visibility: hidden;
+}
+.header :focus-visible {
+  outline: 2px solid #fff6dd;
+  outline-offset: 3px;
 }
 .mobile {
   display: none;
@@ -53,29 +123,103 @@
 .mobile summary {
   display: flex;
   align-items: center;
-  gap: 7px;
-  cursor: pointer;
+  gap: 8px;
   min-height: 44px;
+  padding: 6px 13px;
+  border: 1px solid #b79564;
+  border-radius: var(--radius);
+  color: var(--color-paper);
+  background: var(--grain), #211e1b55;
+  box-shadow: inset 0 1px 0 #f5e2ca26;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mobile[open] summary {
+  color: var(--color-ink);
+  background: var(--grain), var(--brass);
 }
 .mobile nav {
   position: absolute;
-  right: 0;
-  top: 75px;
-  width: 260px;
-  padding: 18px;
-  background: var(--color-paper);
-  border: 1px solid var(--color-bronze);
-  box-shadow: 0 12px 24px #211e1b14;
-  display: grid;
+  top: calc(100% - 1px);
+  right: 22px;
+  width: min(290px, calc(100% - 44px));
+  max-height: calc(100dvh - 95px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 9px;
+  background: var(--grain), var(--color-paper);
+  box-shadow:
+    inset 0 2px 0 #b79564,
+    0 9px 20px #211e1b40;
 }
 .mobile nav a {
-  padding: 10px 12px;
-  text-decoration: none;
+  color: var(--color-ink);
+  border-radius: var(--radius);
 }
 .mobile nav a[aria-current] {
-  color: var(--color-burgundy);
-  text-decoration: underline;
+  background: var(--grain), var(--color-burgundy);
+  color: var(--color-paper);
 }
+.mobile nav :focus-visible {
+  outline-color: var(--color-burgundy);
+  outline-offset: 1px;
+}
+@media (max-width: 1050px) {
+  .desktop {
+    gap: 0;
+  }
+  .desktop a {
+    padding-inline: 10px;
+  }
+  .brand {
+    font-size: 26px;
+  }
+}
+@media (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    margin-inline: -22px;
+    padding: 10px 22px 20px;
+    min-height: 78px;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 24px;
+    gap: 10px;
+  }
+  .seal {
+    width: 42px;
+  }
+}
+@media (max-width: 370px) {
+  .header { padding-inline: 14px; }
+  .brand { font-size: 21px; gap: 8px; }
+  .seal { width: 36px; }
+  .mobile summary { padding-inline: 10px; font-size: 16px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mobile[open] nav {
+    animation: menu-arrival 180ms ease-out;
+  }
+  @keyframes menu-arrival {
+    from {
+      opacity: 0.8;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
 .pageHeading {
   display: flex;
   align-items: center;
@@ -165,24 +309,7 @@
   margin: 0;
   max-width: 55ch;
 }
-@media (max-width: 1050px) {
-  .desktop {
-    gap: 17px;
-  }
-  .brand {
-    font-size: 20px;
-  }
-}
 @media (max-width: 900px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-  .header {
-    min-height: 72px;
-  }
   .footerRow {
     flex-direction: column;
   }
@@ -198,9 +325,6 @@
   }
 }
 @media (max-width: 600px) {
-  .brand {
-    font-size: 19px;
-  }
   .pageHeading {
     padding: 36px 0 24px;
     align-items: start;
@@ -243,10 +367,6 @@
 .pageSymbol {
   flex-basis: 180px;
 }
-.brand {
-  font-size: 23px;
-  letter-spacing: -0.02em;
-}
 @media (max-width: 767px) {
   .footer {
     margin-left: -22px;
@@ -259,9 +379,6 @@
   .pageSymbol {
     flex-basis: 100px;
   }
-  .brand {
-    font-size: 19px;
-  }
 }
 
 @media (min-width: 901px) {
@@ -271,4 +388,9 @@
   .pageSymbol img {
     width: 220px;
   }
+}
+
+:global(.site-container):has([data-exhibition]) .footer {
+  background: url("/images/material-grain.png"), #28201c;
+  box-shadow: inset 0 3px 0 #af936e;
 }

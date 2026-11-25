@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/ssr";
 import { ResumeReading } from "@/components/resume-reading";
-import { Meander } from "@/components/shell";
+import { SphinxRelief } from "@/components/sphinx-relief";
+import e from "@/components/exhibition.module.css";
 import { getPassage } from "@/lib/content";
 import s from "./home.module.css";
 const paths = [
@@ -34,44 +35,25 @@ const paths = [
 export default function Home() {
   const passage = getPassage("shared-burden");
   return (
-    <>
+    <div data-exhibition className={e.exhibition}>
       <section className={s.hero}>
-        <div className={s.heroGrid}>
-          <div className={s.heroCopy}>
-            <h1>
-              Oedipus <br />
-              Rex
-            </h1>
-            <div className={s.invitation}>
-              <p className={s.subtitle}>A search for truth.</p>
-              <p className={s.lead}>
-                Follow the clues. Examine the evidence. Discover how a search
-                for truth becomes a search for identity.
-              </p>
-              <div className="actions">
-                <Link className="button" href="/story/">
-                  Begin the investigation
-                  <ArrowRight size={18} />
-                </Link>
-                <Link href="/story/#study">Explore the study guide</Link>
-              </div>
-            </div>
+        <div className={s.heroCopy}>
+          <h1>
+            Oedipus <i>Rex</i>
+          </h1>
+          <p className={s.subtitle}>A search for truth.</p>
+          <p className={s.lead}>
+            Follow the clues. Examine the evidence. Discover how a search for
+            truth becomes a search for identity.
+          </p>
+          <div className={s.heroActions}>
+            <Link className="button" href="/story/">
+              Begin the investigation <ArrowRight size={18} />
+            </Link>
+            <Link href="/story/#study">Explore the study guide</Link>
           </div>
-          <figure className={s.heroArt}>
-            <Image
-              src="/images/oedipus-sphinx.webp"
-              width={1536}
-              height={1024}
-              priority
-              alt="Oedipus faces the winged Sphinx in a modern Greek vase-inspired illustration."
-              sizes="(max-width:767px) 100vw, 65vw"
-            />
-            <figcaption>
-              Oedipus and the Sphinx · A modern interpretation
-            </figcaption>
-          </figure>
         </div>
-        <Meander />
+        <SphinxRelief />
       </section>
       <dl className={s.facts}>
         <div>
@@ -178,6 +160,6 @@ export default function Home() {
         </p>
         <Link href="/about/#references">Sources and editorial notes</Link>
       </aside>
-    </>
+    </div>
   );
 }

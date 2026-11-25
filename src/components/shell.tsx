@@ -3,12 +3,12 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react/ssr";
 import s from "./shell.module.css";
-export function Meander() {
+export function Meander({ patternId = "meander" }: { patternId?: string }) {
   return (
     <svg className={s.meander} width="1200" height="18" aria-hidden="true">
       <defs>
         <pattern
-          id="meander"
+          id={patternId}
           width="40"
           height="18"
           patternUnits="userSpaceOnUse"
@@ -21,7 +21,7 @@ export function Meander() {
           />
         </pattern>
       </defs>
-      <rect width="100%" height="18" fill="url(#meander)" />
+      <rect width="100%" height="18" fill={`url(#${patternId})`} />
     </svg>
   );
 }

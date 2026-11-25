@@ -142,11 +142,13 @@ export default function AboutPage() {
               reconstructions.
             </p>
             <p>
-              All figures share the approved ivory, charcoal, and bronze
-              palette. The Sphinx scene represents earlier mythic background; it
-              is not staged as a new encounter in the play. Meanders are
-              geometric ornament; the crossroads and eye are interpretive
-              motifs.
+              The Home relief of Oedipus and the Sphinx and the Passages still
+              life of a book and bronze mask were also generated for this
+              exhibition. The illustrated figures share the ivory, charcoal, and
+              bronze palette. The Sphinx scene represents earlier mythic
+              background; it is not staged as a new encounter in the play.
+              Meanders are geometric ornament; the crossroads and eye are
+              interpretive motifs.
             </p>
             <p>
               Libre Baskerville and Source Sans 3 are self-hosted through

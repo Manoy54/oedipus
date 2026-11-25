@@ -1,7 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { BookmarkSimple, ArrowUpRight, CaretDown } from "@phosphor-icons/react";
+import * as m from "motion/react-m";
+import {
+  BookmarkSimple,
+  ArrowUpRight,
+  CaretDown,
+  Columns,
+  MagnifyingGlass,
+} from "@phosphor-icons/react";
 import { passages, themes, sources, episodes } from "@/lib/content";
 import { filterPassages } from "@/lib/passages";
 import { updateActivity } from "@/lib/storage";
@@ -25,7 +32,13 @@ const initialFilters = { query: "", speaker: "", theme: "", savedOnly: false };
 export function PassageLibrary() {
   const [filters, setFilters] = useState(initialFilters);
   useEffect(() => {
-    const clearForAnchor = () => setFilters(initialFilters);
+    const clearForAnchor = () => {
+      if (
+        passages.some((passage) => window.location.hash === `#${passage.id}`)
+      ) {
+        setFilters(initialFilters);
+      }
+    };
     window.addEventListener("hashchange", clearForAnchor);
     return () => window.removeEventListener("hashchange", clearForAnchor);
   }, []);
@@ -33,6 +46,9 @@ export function PassageLibrary() {
   const [comparisonIds, setComparisonIds] = useState<string[]>([]);
   const { activity, loaded, error } = useActivity();
   const filtered = filterPassages(passages, filters, activity.bookmarks);
+  const savedCount = passages.filter((passage) =>
+    activity.bookmarks.includes(passage.id),
+  ).length;
   const speakers = [...new Set(passages.map((passage) => passage.speaker))];
   function bookmark(id: string) {
     const result = updateActivity((current) => ({
@@ -51,20 +67,27 @@ export function PassageLibrary() {
   }
   return (
     <section aria-label="Passage collection">
-      <PassageComparison selected={comparisonIds} onChange={setComparisonIds} />
-      <div className={s.filters}>
+      <div
+        className={s.filters}
+        id="browse-passages"
+        role="search"
+        aria-label="Passage filters"
+      >
         <div>
           <label htmlFor="passage-query">Search the text</label>
-          <input
-            id="passage-query"
-            maxLength={120}
-            type="search"
-            placeholder="A word, phrase, or idea…"
-            value={filters.query}
-            onChange={(event) =>
-              setFilters({ ...filters, query: event.target.value })
-            }
-          />
+          <div className={s.searchField}>
+            <MagnifyingGlass size={20} aria-hidden="true" />
+            <input
+              id="passage-query"
+              maxLength={120}
+              type="search"
+              placeholder="A word, phrase, or idea…"
+              value={filters.query}
+              onChange={(event) =>
+                setFilters({ ...filters, query: event.target.value })
+              }
+            />
+          </div>
         </div>
         <div>
           <label htmlFor="speaker-filter">Speaker</label>
@@ -105,6 +128,11 @@ export function PassageLibrary() {
           Clear filters
         </button>
       </div>
+      <PassageComparison
+        selected={comparisonIds}
+        onChange={setComparisonIds}
+        ready={loaded}
+      />
       <div className={s.resultsBar}>
         <p role="status">
           {filtered.length} {filtered.length === 1 ? "passage" : "passages"}{" "}
@@ -118,13 +146,7 @@ export function PassageLibrary() {
               setFilters({ ...filters, savedOnly: event.target.checked })
             }
           />
-          Saved only (
-          {
-            activity.bookmarks.filter((id) =>
-              passages.some((passage) => passage.id === id),
-            ).length
-          }
-          )
+          Saved only ({savedCount})
         </label>
       </div>
       <p className="small muted">
@@ -139,12 +161,12 @@ export function PassageLibrary() {
       {!filtered.length && (
         <div className="empty-state">
           <h2>
-            {filters.savedOnly && !activity.bookmarks.length
+            {filters.savedOnly && savedCount === 0
               ? "No saved passages yet."
               : "No passages match these filters."}
           </h2>
           <p>
-            {filters.savedOnly && !activity.bookmarks.length
+            {filters.savedOnly && savedCount === 0
               ? "Show all passages, then use Bookmark to keep an excerpt here."
               : "Clear the filters or try another keyword."}
           </p>
@@ -164,7 +186,12 @@ export function PassageLibrary() {
         );
         const attribution = attributedPassage(passage);
         return (
-          <article className={s.passage} id={passage.id} key={passage.id}>
+          <m.article
+            layout="position"
+            className={s.passage}
+            id={passage.id}
+            key={passage.id}
+          >
             <div className={s.passageText}>
               <h2>
                 <HighlightedText text={passage.title} query={filters.query} />
@@ -211,8 +238,9 @@ export function PassageLibrary() {
                 className="text-button"
                 aria-pressed={comparisonIds.includes(passage.id)}
                 disabled={
-                  comparisonIds.length === 2 &&
-                  !comparisonIds.includes(passage.id)
+                  !loaded ||
+                  (comparisonIds.length === 2 &&
+                    !comparisonIds.includes(passage.id))
                 }
                 aria-label={`${comparisonIds.includes(passage.id) ? "Deselect" : "Compare"} ${passage.title}`}
                 onClick={() =>
@@ -223,6 +251,7 @@ export function PassageLibrary() {
                   )
                 }
               >
+                <Columns size={19} aria-hidden="true" />
                 {comparisonIds.includes(passage.id)
                   ? "Selected for comparison"
                   : "Add to comparison"}
@@ -251,7 +280,7 @@ export function PassageLibrary() {
                 </a>
               )}
             </aside>
-          </article>
+          </m.article>
         );
       })}
     </section>

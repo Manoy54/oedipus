@@ -98,6 +98,10 @@ components:
 
 # Design System: Oedipus Rex
 
+## Home and Passages material update
+
+Home and Passages now use sculptural artwork, textured stages, inset fields, and raised paper surfaces. Their local material tokens are in `src/components/exhibition.module.css`. Home uses a GSAP light sweep on a responsive Sphinx relief. The passage comparison uses Motion to align the two excerpts across a paper fold, stacking them at phone widths. Both routes retain the shared literary typography and support reduced motion. The V2 descriptions below record the earlier composition of these two routes.
+
 ## Overview
 
 **Creative North Star: "A contemporary literary exhibition of Greek tragedy"**

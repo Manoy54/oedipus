@@ -1,92 +1,129 @@
 .hero {
-  margin: 24px -40px 0;
-  padding: 38px 40px 0;
-  background: var(--color-ink);
-  color: var(--color-paper);
-}
-.heroGrid {
+  position: relative;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: 0.92fr 1.45fr;
-  gap: 20px;
-  align-items: center;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.25fr);
+  align-items: stretch;
+  margin: 22px -40px 0;
+  color: #fff7e7;
+  background:
+    var(--grain), radial-gradient(ellipse at 100% 0%, #4c3828, #241b18 68%);
+  box-shadow: 0 12px 23px -18px #26150ceb;
 }
 .heroCopy {
-  min-width: 0;
+  align-self: center;
+  padding: clamp(44px, 4.5vw, 72px) 16px clamp(44px, 4.5vw, 72px)
+    clamp(35px, 4vw, 64px);
   position: relative;
   z-index: 1;
 }
-.heroCopy h1 {
-  font-size: clamp(70px, 7.2vw, 96px);
-  line-height: 1.08;
+.hero h1 {
+  font-size: clamp(76px, 7.2vw, 100px);
+  margin: 0;
+  line-height: 0.99;
   letter-spacing: -0.04em;
-  margin: 0 0 26px;
+  text-shadow: 0 3px 5px #0005;
 }
-.invitation {
-  background: var(--color-paper);
-  color: var(--color-ink);
-  padding: 22px 24px;
-  margin: 0 -20px 32px 0;
-  position: relative;
+.hero h1 i {
+  display: block;
+  font-weight: 400;
+  color: var(--brass-light);
 }
 .subtitle {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 31px;
-  line-height: 1.3;
-  color: var(--color-burgundy);
-  letter-spacing: -0.03em;
-  margin: 0 0 16px;
-  padding-bottom: 4px;
+  color: #ebd4b0;
+  font: italic 26px/1.4 var(--font-display);
+  margin: 23px 0 12px;
 }
 .lead {
-  font-size: 18px;
-  line-height: 1.5;
-  max-width: 37ch;
-  margin-bottom: 22px;
+  max-width: 36ch;
+  margin: 0;
+  color: #eee4d5;
 }
-.invitation :global(.actions) {
-  gap: 14px;
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-top: 24px;
 }
-.invitation :global(.actions) > a:last-child {
+.heroActions > a:last-child {
+  color: #f1dfc5;
   font-size: 15px;
+  padding-block: 10px;
 }
 .heroArt {
-  min-width: 0;
+  min-height: 100%;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  background-color: #3d2b1d;
+}
+.heroArt picture,
+.heroArt img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.heroArt picture {
+  position: absolute;
+  inset: 0;
 }
 .heroArt img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 51% 45%;
+}
+.heroArt::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #241c18 0%, #281c1640 8%, transparent 25%),
+    linear-gradient(0deg, #1b120be6, transparent 17%);
+}
+.rakingLight {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(
+    108deg,
+    transparent 28%,
+    #f5d7a139 49%,
+    transparent 67%
+  );
+  mix-blend-mode: screen;
 }
 .heroArt figcaption {
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  right: 22px;
+  margin: 0;
+  color: #fff0d7;
   font-size: 13px;
-  color: var(--color-stone);
-  margin: 8px 0 24px;
-  text-align: right;
-  font-style: italic;
 }
-.hero > svg {
-  color: var(--color-stone);
-  opacity: 0.7;
-  height: 18px;
+.heroArt figcaption span {
+  color: #ebd8ba;
 }
-.hero :focus-visible {
-  outline-color: var(--color-paper);
-}
-.hero .invitation :focus-visible {
-  outline-color: var(--color-burgundy);
+.hero :focus-visible,
+.quoteStage :focus-visible {
+  outline-color: #fff0d4;
 }
 .facts {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  margin: 0;
-  border-bottom: 1px solid var(--color-stone);
-  padding: 24px 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 -40px;
+  padding: 22px clamp(35px, 4vw, 64px);
+  background: var(--grain), linear-gradient(#e3d7c0, #eee5d4 35%, #e8dcc6);
+  border-block: 1px solid #b7a182;
+  box-shadow:
+    inset 0 2px 0 #fff5dcba,
+    var(--paper-shadow);
 }
 .facts > div {
-  border-right: 1px solid var(--color-stone);
+  border-right: 1px solid #b5a78f;
   padding: 0 24px;
 }
 .facts > div:first-child {
@@ -96,11 +133,12 @@
   border: 0;
 }
 .facts dt {
-  text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 0.08em;
-  color: var(--color-muted-ink);
-  margin-bottom: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: #6e5237;
+  margin-bottom: 3px;
 }
 .facts dd {
   font-family: var(--font-display);
@@ -109,76 +147,77 @@
 }
 .facts a {
   color: var(--color-ink);
-  text-decoration: none;
 }
 .introduction {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 96px;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(42px, 7vw, 100px);
   margin: 80px 0;
+  align-items: start;
 }
-.introduction h2 {
-  font-size: 38px;
-  margin-bottom: 26px;
+.introduction h2,
+.explore h2 {
+  font-size: clamp(32px, 3.3vw, 48px);
+  line-height: 1.17;
 }
 .introduction p {
-  max-width: 68ch;
+  max-width: 65ch;
 }
 .introduction aside {
-  border-top: 1px solid var(--color-bronze);
-  padding-top: 24px;
+  padding: 30px;
+  background: var(--grain), linear-gradient(135deg, #faf5e9, #e5d9bf);
+  box-shadow:
+    inset 0 2px 0 #ab8659,
+    var(--paper-shadow);
 }
 .introduction aside img {
   display: block;
-  float: right;
-  width: 120px;
-  margin: 0 0 18px 18px;
+  width: 86px;
+  mix-blend-mode: multiply;
+  margin: 0 0 18px;
 }
 .introduction aside h3 {
-  font-size: 28px;
+  font-size: 27px;
 }
 .introduction aside p {
   color: var(--color-muted-ink);
 }
-.introduction aside a {
+.introduction aside a,
+.quoteStage a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   font-size: 16px;
 }
 .quoteStage {
+  position: relative;
   margin: 64px -40px;
-  padding: 48px 64px;
-  background: var(--color-burgundy);
-  color: var(--color-paper);
+  padding: 48px clamp(30px, 6vw, 88px);
+  background:
+    var(--grain), linear-gradient(115deg, #6c2134, #511b2c 75%, #3a1922);
+  box-shadow:
+    inset 0 1px 0 #b88d65,
+    var(--paper-shadow);
+  color: #fff4e1;
 }
 .quoteStage h2 {
-  font-family: var(--font-body);
-  font-size: 17px;
-  font-weight: 400;
-  margin: 0 0 24px;
+  font: 600 17px/1.4 var(--font-body);
+  color: #eac8ac;
+  margin: 0 0 19px;
 }
 .quoteStage blockquote {
-  font-size: clamp(26px, 3.3vw, 42px);
-  line-height: 1.5;
-  max-width: 31ch;
+  font-size: clamp(27px, 3.2vw, 44px);
+  line-height: 1.45;
+  max-width: 34ch;
   white-space: pre-line;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 .quoteStage p {
-  font-size: 14px;
-  color: var(--color-paper);
+  font-size: 15px;
   margin: 0 0 18px;
 }
 .quoteStage a {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  color: var(--color-paper);
-  font-size: 16px;
-}
-.quoteStage :focus-visible {
-  outline-color: var(--color-paper);
+  color: #fff4e1;
 }
 .explore {
   margin: 72px 0;
@@ -186,15 +225,15 @@
 .pathGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 64px;
+  gap: 0 56px;
 }
 .path {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 30px 0;
-  border-bottom: 1px solid var(--color-stone);
+  padding: 28px 0;
+  border-bottom: 1px solid var(--surface-edge);
   color: var(--color-ink);
   text-decoration: none;
 }
@@ -205,19 +244,22 @@
 .path p {
   font-size: 17px;
   color: var(--color-muted-ink);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   max-width: 42ch;
 }
-.path span {
-  color: var(--color-burgundy);
-  font-size: 15px;
-}
+.path span,
 .path > svg {
   color: var(--color-burgundy);
-  transition: transform 200ms ease-out;
+}
+.path span {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.path > svg {
+  transition: transform 180ms ease-out;
 }
 .path:hover > svg {
-  transform: translateX(5px);
+  transform: translateX(4px);
 }
 .evidenceLink {
   margin-top: 28px;
@@ -236,68 +278,67 @@
 .before a {
   font-size: 16px;
 }
-@media (max-width: 1050px) {
-  .heroCopy h1 {
-    font-size: 76px;
+@media (max-width: 900px) and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
   }
-  .subtitle {
-    font-size: 26px;
+  .heroCopy {
+    padding-left: 32px;
   }
-  .invitation {
-    padding: 20px;
-  }
-  .heroGrid {
-    grid-template-columns: 1fr 1.2fr;
-  }
-  .lead {
-    font-size: 17px;
-  }
-  .facts dd {
-    font-size: 18px;
-  }
-  .introduction {
-    gap: 40px;
-  }
-  .introduction h2 {
-    font-size: 32px;
-  }
-  .quoteStage {
-    padding: 40px;
+  .hero h1 {
+    font-size: 72px;
   }
 }
 @media (max-width: 767px) {
   .hero {
-    margin: 16px -22px 0;
-    padding: 28px 22px 0;
-  }
-  .heroGrid {
     grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  .heroCopy h1 {
-    font-size: 64px;
-    margin-bottom: 22px;
-  }
-  .heroCopy h1 br {
-    display: none;
-  }
-  .invitation {
-    margin: 0;
-    padding: 22px 20px;
+    margin: 12px -22px 0;
   }
   .heroArt {
-    margin-top: 14px;
+    grid-row: 1;
+    min-height: 0;
+    height: clamp(192px, 56vw, 340px);
+  }
+  .heroArt img {
+    object-position: 50% 39%;
+  }
+  .heroArt::after {
+    background: linear-gradient(0deg, #261c17df, transparent 30%);
   }
   .heroArt figcaption {
-    text-align: left;
+    bottom: 8px;
+    right: 16px;
     font-size: 12px;
   }
+  .heroCopy {
+    padding: 24px 24px 29px;
+  }
+  .hero h1 {
+    font-size: clamp(44px, 11.4vw, 72px);
+  }
+  .hero h1 i {
+    display: inline;
+  }
+  .subtitle {
+    margin: 10px 0 7px;
+    font-size: 22px;
+  }
+  .lead {
+    font-size: 17px;
+    line-height: 1.48;
+  }
+  .heroActions {
+    margin-top: 17px;
+    gap: 7px 15px;
+  }
   .facts {
+    margin: 0 -22px;
+    padding: 18px 24px;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 0;
+    gap: 15px 0;
   }
   .facts > div {
-    padding: 0 16px;
+    padding: 0 14px;
   }
   .facts > div:nth-child(odd) {
     padding-left: 0;
@@ -305,45 +346,36 @@
   .facts > div:nth-child(even) {
     border: 0;
   }
+  .facts dd {
+    font-size: 17px;
+  }
   .introduction {
     grid-template-columns: 1fr;
-    gap: 32px;
-    margin: 52px 0;
+    gap: 22px;
+    margin: 48px 0;
   }
   .introduction h2 br {
     display: none;
   }
+  .introduction aside {
+    padding: 24px;
+  }
   .introduction aside img {
-    width: 100px;
+    float: right;
+    margin: 0 0 12px 14px;
+    width: 70px;
   }
   .quoteStage {
-    margin: 44px -22px;
+    margin: 42px -22px;
     padding: 34px 24px;
-  }
-  .pathGrid {
-    grid-template-columns: 1fr;
   }
   .explore {
     margin: 48px 0;
   }
+  .pathGrid {
+    grid-template-columns: 1fr;
+  }
   .path {
-    padding: 26px 0;
-  }
-}
-@media (max-width: 390px) {
-  .heroCopy h1 {
-    font-size: 54px;
-  }
-  .heroCopy h1 br {
-    display: block;
-  }
-  .subtitle {
-    font-size: 25px;
-  }
-  .invitation {
-    padding: 20px 16px;
-  }
-  .facts dd {
-    font-size: 17px;
+    padding: 24px 0;
   }
 }

@@ -1,0 +1,40 @@
+.exhibition {
+  --grain: url("/images/material-grain.png");
+  --paper-lit: #fcf8ed;
+  --brass-light: #dec394;
+  --inset: inset 0 2px 5px #3824121c, 0 1px 0 #fff8e8;
+  --paper-shadow: 0 2px 2px #583a1b12, 0 10px 24px -14px #4d331f66;
+  --surface-edge: #b9aa91;
+}
+.exhibition :global(.button) {
+  background-color: var(--color-burgundy);
+  background-image: linear-gradient(#ffffff0e, transparent 60%, #32071124);
+  border-color: #702032;
+  box-shadow:
+    inset 0 1px 0 #f4c9cd5c,
+    0 2px 1px #400d1aa1,
+    0 5px 12px #1d130f32;
+}
+.exhibition :global(.button:hover) {
+  background-color: #672033;
+}
+.exhibition :global(.button:active) {
+  box-shadow: inset 0 2px 4px #300c1a66;
+}
+.exhibition :global(.button-secondary) {
+  color: var(--color-paper);
+}
+.exhibition select,
+.exhibition input:not([type="checkbox"]),
+.exhibition textarea {
+  background: var(--paper-lit);
+  box-shadow: var(--inset);
+  border-color: #9d8b70;
+}
+.exhibition :global(.notice) {
+  margin: 0;
+  padding: 14px 0;
+}
+.exhibition :global(.text-button[aria-pressed="true"]) {
+  font-weight: 700;
+}
